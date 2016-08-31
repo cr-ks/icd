@@ -1,0 +1,86 @@
+[
+{
+  "title":"A00-B99",
+  "description":"Certain infectious and parasitic diseases"
+},
+{
+  "title":"C00-D49",
+  "description":"Neoplasms"
+},
+{
+  "title":"D50-D89",
+  "description":"Diseases of the blood and blood-forming organs and certain disorders involving the immune mechanism"
+},
+{
+  "title":"E00-E89",
+  "description":"Endocrine, nutritional and metabolic diseases"
+},
+{
+  "title":"F01-F99",
+  "description":"Mental and behavioural disorders"
+},
+{
+  "title":"G00-G99",
+  "description":"Diseases of the nervous system"
+},
+{
+  "title":"H00-H59",
+  "description":"Diseases of the eye and adnexa"
+},
+{
+  "title":"H60-H95",
+  "description":"Diseases of the ear and mastoid process"
+},
+{
+  "title":"I00-I95",
+  "description":"Diseases of the circulatory system"
+},
+{
+  "title":"J00-J99",
+  "description":"Diseases of the respiratory system"
+},
+{
+  "title":"K00-K95",
+  "description":"Diseases of the digestive system"
+},
+{
+  "title":"L00-L99",
+  "description":"Diseases of the skin and subcutaneous tissue"
+},
+{
+  "title":"M00-M99",
+  "description":"Diseases of the musculoskeletal system and connective tissue"
+},
+{
+  "title":"N00-N99",
+  "description":"Diseases of the genitourinary system"
+},
+{
+  "title":"O00-O9A",
+  "description":"Pregnancy, childbirth and the puerperium"
+},
+{
+  "title":"P00-P96",
+  "description":"Certain conditions originating in the perinatal period"
+},
+{
+  "title":"Q00-Q99",
+  "description":"Congenital malformations, deformations and chromosomal abnormalities"
+},
+{
+  "title":"R00-R99",
+  "description":"Symptoms, signs and abnormal clinical and laboratory findings, not elsewhere classified"
+},
+{
+  "title":"S00-T88",
+  "description":"Injury, poisoning and certain other consequences of external causes"
+},
+{
+  "title":"V00-Y99",
+  "description":"External causes of morbidity and mortality"
+},
+{
+  "title":"Z00-Z99",
+  "description":"Factors influencing health status and contact with health services"
+}
+]
