@@ -10,7 +10,7 @@ var currentYear = new Date().getFullYear();
 var Content = React.createClass({
   render: function() {
     var cardTable = this.props.cards.map(function(card) {
-      return <Card key={card._id} card={card} />
+      return <Card key={card.title} card={card} />
     });
     return (
       <div>

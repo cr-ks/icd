@@ -23,7 +23,8 @@ var Main = React.createClass({
     );
   },
   componentDidMount: function() {
-    $.getJSON('/api/chapters', (function(data) {
+    $.getJSON('/api/chapters', (function(result) {
+      var data = result[0].chapters;
       this.setState({cards: data});
     }.bind(this)));
   }
@@ -45,7 +46,9 @@ var Blocks = React.createClass({
   },
   componentDidMount: function() {
     var query = '/api/chapters/' + this.props.params.title;
-    $.getJSON(query, (function(data) {
+    $.getJSON(query, (function(result) {
+      console.log(result[0]);
+      var data = result[0].blocks;
       this.setState({chapters: data});
     }.bind(this)));
   }

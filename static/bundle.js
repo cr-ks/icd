@@ -36214,7 +36214,6 @@ arguments[4][45][0].apply(exports,arguments)
 'use strict';
 
 //Imports
-
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Router = require('react-router').Router;
@@ -36224,7 +36223,12 @@ var browserHistory = require('react-router').browserHistory;
 var Main = require('./Main.jsx').Main;
 var Blocks = require('./Main.jsx').Blocks;
 
-ReactDOM.render(React.createElement(Router, { history: browserHistory }, React.createElement(Route, { path: '/', component: Main }), React.createElement(Route, { path: '/chapters/:title', component: Blocks })), document.getElementById('main'));
+ReactDOM.render(React.createElement(
+  Router,
+  { history: browserHistory },
+  React.createElement(Route, { path: '/', component: Main }),
+  React.createElement(Route, { path: '/chapters/:title', component: Blocks })
+), document.getElementById('main'));
 
 },{"./Main.jsx":239,"react":233,"react-dom":52,"react-router":82}],237:[function(require,module,exports){
 'use strict';
@@ -36270,6 +36274,7 @@ module.exports = Categories;
 'use strict';
 
 //Imports
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Router = require('react-router').Router;
@@ -36283,27 +36288,9 @@ var Content = React.createClass({
 
   render: function render() {
     var cardTable = this.props.cards.map(function (card) {
-      return React.createElement(Card, { key: card._id, card: card });
+      return React.createElement(Card, { key: card.title, card: card });
     });
-    return React.createElement(
-      'div',
-      null,
-      React.createElement(
-        'div',
-        { className: 'main-container' },
-        React.createElement(
-          'div',
-          { className: 'headline' },
-          this.props.title
-        ),
-        React.createElement(
-          'div',
-          { className: 'card-container' },
-          cardTable
-        ),
-        React.createElement('div', { className: 'widget-container' })
-      )
-    );
+    return React.createElement('div', null, React.createElement('div', { className: 'main-container' }, React.createElement('div', { className: 'headline' }, this.props.title), React.createElement('div', { className: 'card-container' }, cardTable), React.createElement('div', { className: 'widget-container' })));
   }
 });
 
@@ -36335,7 +36322,8 @@ var Main = React.createClass({
     return React.createElement('div', null, React.createElement(Nav, { year: currentYear }), React.createElement(Content, { title: currentTitle, cards: this.state.cards }));
   },
   componentDidMount: function componentDidMount() {
-    $.getJSON('/api/chapters', function (data) {
+    $.getJSON('/api/chapters', function (result) {
+      var data = result[0].chapters;
       this.setState({ cards: data });
     }.bind(this));
   }
@@ -36354,7 +36342,9 @@ var Blocks = React.createClass({
   },
   componentDidMount: function componentDidMount() {
     var query = '/api/chapters/' + this.props.params.title;
-    $.getJSON(query, function (data) {
+    $.getJSON(query, function (result) {
+      console.log(result[0]);
+      var data = result[0].blocks;
       this.setState({ chapters: data });
     }.bind(this));
   }

@@ -1,4 +1,5 @@
-[
+{
+  "blocks": [
   {
     "chapter": "A00-B99",
     "title": "A00-A09",
@@ -1305,3 +1306,4 @@
     "description": "Persons with potential health hazards related to family and personal history and certain conditions influencing health status"
   }
 ]
+}

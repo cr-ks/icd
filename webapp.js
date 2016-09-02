@@ -15,7 +15,7 @@ app.get('/api/chapters', function(req, res) {
 
 app.get('/api/chapters/:id', function(req, res) {
   var id = req.params.id;
-  db.collection("blocks").find({chapter:id}).toArray(function(err, docs) {
+  db.collection("blocks").find({blocks: {$elemMatch: {chapter:"A00-B99"}}}).toArray(function(err, docs) {
     res.json(docs);
   });
 });
