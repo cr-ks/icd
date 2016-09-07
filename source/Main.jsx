@@ -36,7 +36,7 @@ var Blocks = React.createClass({
   },
   render: function() {
     var currentChapter = this.props.params.title;
-    var currentTitle = 'ICD10-CM Chapter ' + currentChapter;
+    var currentTitle = currentYear + ' ICD-10-CM Codes: ' + currentChapter;
     return (
       <div>
       <Nav year={currentYear}/>
@@ -45,13 +45,37 @@ var Blocks = React.createClass({
     );
   },
   componentDidMount: function() {
-    var query = '/api/chapters/' + this.props.params.title;
+    var title = this.props.params.title;
+    var query = '/api/chapters/' + title;
     $.getJSON(query, (function(result) {
-      console.log(result[0]);
-      var data = result[0].blocks;
+      var data = result[0][title];
       this.setState({chapters: data});
     }.bind(this)));
   }
 });
 
-module.exports = { Main: Main, Blocks: Blocks};
+var Codes = React.createClass({
+  getInitialState: function() {
+    return {chapters: []};
+  },
+  render: function() {
+    var currentChapter = this.props.params.title;
+    var currentTitle = currentYear + ' ICD-10-CM Codes: ' + currentChapter;
+    return (
+      <div>
+      <Nav year={currentYear}/>
+      <Content title={currentTitle} cards={this.state.chapters}/>
+      </div>
+    );
+  },
+  componentDidMount: function() {
+    var title = this.props.params.title;
+    var query = '/api/chapters/' + title;
+    $.getJSON(query, (function(result) {
+      var data = result[0][title];
+      this.setState({chapters: data});
+    }.bind(this)));
+  }
+});
+
+module.exports = { Main: Main, Blocks: Blocks, Codes: Codes};

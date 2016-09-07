@@ -4,7 +4,7 @@
 - Add fetch polyfill for other browsers
 
 #Mongo Commands
-mongod
+mongod (start)
 mongo --shell
 use <db name>
 db.dropDatabase()

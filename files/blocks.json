@@ -1,1309 +1,1345 @@
 {
-  "blocks": [
-  {
-    "chapter": "A00-B99",
-    "title": "A00-A09",
-    "description": "Intestinal infectious diseases"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "A15-A19",
-    "description": "Tuberculosis"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "A20-A28",
-    "description": "Certain zoonotic bacterial diseases"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "A30-A49",
-    "description": "Other bacterial diseases"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "A50-A64",
-    "description": "Infections with a predominantly sexual mode of transmission"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "A65-A69",
-    "description": "Other spirochaetal diseases"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "A70-A74",
-    "description": "Other diseases caused by chlamydiae"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "A75-A79",
-    "description": "Rickettsioses"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "A80-A89",
-    "description": "Viral infections of the central nervous system"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "A90-A99",
-    "description": "Arthropod-borne viral fevers and viral haemorrhagic fevers"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "B00-B09",
-    "description": "Viral infections characterized by skin and mucous membrane lesions"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "B15-B19",
-    "description": "Viral hepatitis"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "B20-B24",
-    "description": "Human immunodeficiency virus [HIV] disease"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "B25-B34",
-    "description": "Other viral diseases"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "B35-B49",
-    "description": "Mycoses"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "B50-B64",
-    "description": "Protozoal diseases"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "B65-B83",
-    "description": "Helminthiases"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "B85-B89",
-    "description": "Pediculosis, acariasis and other infestations"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "B90-B94",
-    "description": "Sequelae of infectious and parasitic diseases"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "B95-B98",
-    "description": "Bacterial, viral and other infectious agents"
-  },
-  {
-    "chapter": "A00-B99",
-    "title": "B99-B99",
-    "description": "Other infectious diseases"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C00-C14",
-    "description": "Malignant neoplasms of lip, oral cavity and pharynx"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C15-C26",
-    "description": "Malignant neoplasms of digestive organs"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C30-C39",
-    "description": "Malignant neoplasms of respiratory and intrathoracic organs"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C40-C41",
-    "description": "Malignant neoplasms of bone and articular cartilage"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C43-C44",
-    "description": "Melanoma and other malignant neoplasms of skin"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C45-C49",
-    "description": "Malignant neoplasms of mesothelial and soft tissue"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C50-C50",
-    "description": "Malignant neoplasm of breast"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C51-C58",
-    "description": "Malignant neoplasms of female genital organs"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C60-C63",
-    "description": "Malignant neoplasms of male genital organs"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C64-C68",
-    "description": "Malignant neoplasms of urinary tract"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C69-C72",
-    "description": "Malignant neoplasms of eye, brain and other parts of central nervous system"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C73-C75",
-    "description": "Malignant neoplasms of thyroid and other endocrine glands"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C76-C80",
-    "description": "Malignant neoplasms of ill-defined, secondary and unspecified sites"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C81-C96",
-    "description": "Malignant neoplasms, stated or presumed to be primary, of lymphoid, haematopoietic and related tissue"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "C97-C97",
-    "description": "Malignant neoplasms of independent (primary) multiple sites"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "D00-D09",
-    "description": "In situ neoplasms"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "D10-D36",
-    "description": "Benign neoplasms"
-  },
-  {
-    "chapter": "C00-D49",
-    "title": "D37-D48",
-    "description": "Neoplasms of uncertain or unknown behaviour"
-  },
-  {
-    "chapter": "D50-D89",
-    "title": "D50-D53",
-    "description": "Nutritional anaemias"
-  },
-  {
-    "chapter": "D50-D89",
-    "title": "D55-D59",
-    "description": "Haemolytic anaemias"
-  },
-  {
-    "chapter": "D50-D89",
-    "title": "D60-D64",
-    "description": "Aplastic and other anaemias"
-  },
-  {
-    "chapter": "D50-D89",
-    "title": "D65-D69",
-    "description": "Coagulation defects, purpura and other haemorrhagic conditions"
-  },
-  {
-    "chapter": "D50-D89",
-    "title": "D70-D77",
-    "description": "Other diseases of blood and blood-forming organs"
-  },
-  {
-    "chapter": "D50-D89",
-    "title": "D80-D89",
-    "description": "Certain disorders involving the immune mechanism"
-  },
-  {
-    "chapter": "E00-E89",
-    "title": "E00-E07",
-    "description": "Disorders of thyroid gland"
-  },
-  {
-    "chapter": "E00-E89",
-    "title": "E10-E14",
-    "description": "Diabetes mellitus"
-  },
-  {
-    "chapter": "E00-E89",
-    "title": "E15-E16",
-    "description": "Other disorders of glucose regulation and pancreatic internal secretion"
-  },
-  {
-    "chapter": "E00-E89",
-    "title": "E20-E35",
-    "description": "Disorders of other endocrine glands"
-  },
-  {
-    "chapter": "E00-E89",
-    "title": "E40-E46",
-    "description": "Malnutrition"
-  },
-  {
-    "chapter": "E00-E89",
-    "title": "E50-E64",
-    "description": "Other nutritional deficiencies"
-  },
-  {
-    "chapter": "E00-E89",
-    "title": "E65-E68",
-    "description": "Obesity and other hyperalimentation"
-  },
-  {
-    "chapter": "E00-E89",
-    "title": "E70-E90",
-    "description": "Metabolic disorders"
-  },
-  {
-    "chapter": "F01-F99",
-    "title": "F00-F09",
-    "description": "Organic, including symptomatic, mental disorders"
-  },
-  {
-    "chapter": "F01-F99",
-    "title": "F10-F19",
-    "description": "Mental and behavioural disorders due to psychoactive substance use"
-  },
-  {
-    "chapter": "F01-F99",
-    "title": "F20-F29",
-    "description": "Schizophrenia, schizotypal and delusional disorders"
-  },
-  {
-    "chapter": "F01-F99",
-    "title": "F30-F39",
-    "description": "Mood [affective] disorders"
-  },
-  {
-    "chapter": "F01-F99",
-    "title": "F40-F48",
-    "description": "Neurotic, stress-related and somatoform disorders"
-  },
-  {
-    "chapter": "F01-F99",
-    "title": "F50-F59",
-    "description": "Behavioural syndromes associated with physiological disturbances and physical factors"
-  },
-  {
-    "chapter": "F01-F99",
-    "title": "F60-F69",
-    "description": "Disorders of adult personality and behaviour"
-  },
-  {
-    "chapter": "F01-F99",
-    "title": "F70-F79",
-    "description": "Mental retardation"
-  },
-  {
-    "chapter": "F01-F99",
-    "title": "F80-F89",
-    "description": "Disorders of psychological development"
-  },
-  {
-    "chapter": "F01-F99",
-    "title": "F90-F98",
-    "description": "Behavioural and emotional disorders with onset usually occurring in childhood and adolescence"
-  },
-  {
-    "chapter": "F01-F99",
-    "title": "F99-F99",
-    "description": "Unspecified mental disorder"
-  },
-  {
-    "chapter": "G00-G99",
-    "title": "G00-G09",
-    "description": "Inflammatory diseases of the central nervous system"
-  },
-  {
-    "chapter": "G00-G99",
-    "title": "G10-G14",
-    "description": "Systemic atrophies primarily affecting the central nervous system"
-  },
-  {
-    "chapter": "G00-G99",
-    "title": "G20-G26",
-    "description": "Extrapyramidal and movement disorders"
-  },
-  {
-    "chapter": "G00-G99",
-    "title": "G30-G32",
-    "description": "Other degenerative diseases of the nervous system"
-  },
-  {
-    "chapter": "G00-G99",
-    "title": "G35-G37",
-    "description": "Demyelinating diseases of the central nervous system"
-  },
-  {
-    "chapter": "G00-G99",
-    "title": "G40-G47",
-    "description": "Episodic and paroxysmal disorders"
-  },
-  {
-    "chapter": "G00-G99",
-    "title": "G50-G59",
-    "description": "Nerve, nerve root and plexus disorders"
-  },
-  {
-    "chapter": "G00-G99",
-    "title": "G60-G64",
-    "description": "Polyneuropathies and other disorders of the peripheral nervous system"
-  },
-  {
-    "chapter": "G00-G99",
-    "title": "G70-G73",
-    "description": "Diseases of myoneural junction and muscle"
-  },
-  {
-    "chapter": "G00-G99",
-    "title": "G80-G83",
-    "description": "Cerebral palsy and other paralytic syndromes"
-  },
-  {
-    "chapter": "G00-G99",
-    "title": "G90-G99",
-    "description": "Other disorders of the nervous system"
-  },
-  {
-    "chapter": "H00-H59",
-    "title": "H00-H06",
-    "description": "Disorders of eyelid, lacrimal system and orbit"
-  },
-  {
-    "chapter": "H00-H59",
-    "title": "H10-H13",
-    "description": "Disorders of conjunctiva"
-  },
-  {
-    "chapter": "H00-H59",
-    "title": "H15-H22",
-    "description": "Disorders of sclera, cornea, iris and ciliary body"
-  },
-  {
-    "chapter": "H00-H59",
-    "title": "H25-H28",
-    "description": "Disorders of lens"
-  },
-  {
-    "chapter": "H00-H59",
-    "title": "H30-H36",
-    "description": "Disorders of choroid and retina"
-  },
-  {
-    "chapter": "H00-H59",
-    "title": "H40-H42",
-    "description": "Glaucoma"
-  },
-  {
-    "chapter": "H00-H59",
-    "title": "H43-H45",
-    "description": "Disorders of vitreous body and globe"
-  },
-  {
-    "chapter": "H00-H59",
-    "title": "H46-H48",
-    "description": "Disorders of optic nerve and visual pathways"
-  },
-  {
-    "chapter": "H00-H59",
-    "title": "H49-H52",
-    "description": "Disorders of ocular muscles, binocular movement, accommodation and refraction"
-  },
-  {
-    "chapter": "H00-H59",
-    "title": "H53-H54",
-    "description": "Visual disturbances and blindness"
-  },
-  {
-    "chapter": "H00-H59",
-    "title": "H55-H59",
-    "description": "Other disorders of eye and adnexa"
-  },
-  {
-    "chapter": "H60-H95",
-    "title": "H60-H62",
-    "description": "Diseases of external ear"
-  },
-  {
-    "chapter": "H60-H95",
-    "title": "H65-H75",
-    "description": "Diseases of middle ear and mastoid"
-  },
-  {
-    "chapter": "H60-H95",
-    "title": "H80-H83",
-    "description": "Diseases of inner ear"
-  },
-  {
-    "chapter": "H60-H95",
-    "title": "H90-H95",
-    "description": "Other disorders of ear"
-  },
-  {
-    "chapter": "I00-I95",
-    "title": "I00-I02",
-    "description": "Acute rheumatic fever"
-  },
-  {
-    "chapter": "I00-I95",
-    "title": "I05-I09",
-    "description": "Chronic rheumatic heart diseases"
-  },
-  {
-    "chapter": "I00-I95",
-    "title": "I10-I15",
-    "description": "Hypertensive diseases"
-  },
-  {
-    "chapter": "I00-I95",
-    "title": "I20-I25",
-    "description": "Ischaemic heart diseases"
-  },
-  {
-    "chapter": "I00-I95",
-    "title": "I26-I28",
-    "description": "Pulmonary heart disease and diseases of pulmonary circulation"
-  },
-  {
-    "chapter": "I00-I95",
-    "title": "I30-I52",
-    "description": "Other forms of heart disease"
-  },
-  {
-    "chapter": "I00-I95",
-    "title": "I60-I69",
-    "description": "Cerebrovascular diseases"
-  },
-  {
-    "chapter": "I00-I95",
-    "title": "I70-I79",
-    "description": "Diseases of arteries, arterioles and capillaries"
-  },
-  {
-    "chapter": "I00-I95",
-    "title": "I80-I89",
-    "description": "Diseases of veins, lymphatic vessels and lymph nodes, not elsewhere classified"
-  },
-  {
-    "chapter": "I00-I95",
-    "title": "I95-I99",
-    "description": "Other and unspecified disorders of the circulatory system"
-  },
-  {
-    "chapter": "J00-J99",
-    "title": "J00-J06",
-    "description": "Acute upper respiratory infections"
-  },
-  {
-    "chapter": "J00-J99",
-    "title": "J09-J18",
-    "description": "Influenza and pneumonia"
-  },
-  {
-    "chapter": "J00-J99",
-    "title": "J20-J22",
-    "description": "Other acute lower respiratory infections"
-  },
-  {
-    "chapter": "J00-J99",
-    "title": "J30-J39",
-    "description": "Other diseases of upper respiratory tract"
-  },
-  {
-    "chapter": "J00-J99",
-    "title": "J40-J47",
-    "description": "Chronic lower respiratory diseases"
-  },
-  {
-    "chapter": "J00-J99",
-    "title": "J60-J70",
-    "description": "Lung diseases due to external agents"
-  },
-  {
-    "chapter": "J00-J99",
-    "title": "J80-J84",
-    "description": "Other respiratory diseases principally affecting the interstitium"
-  },
-  {
-    "chapter": "J00-J99",
-    "title": "J85-J86",
-    "description": "Suppurative and necrotic conditions of lower respiratory tract"
-  },
-  {
-    "chapter": "J00-J99",
-    "title": "J90-J94",
-    "description": "Other diseases of pleura"
-  },
-  {
-    "chapter": "J00-J99",
-    "title": "J95-J99",
-    "description": "Other diseases of the respiratory system"
-  },
-  {
-    "chapter": "K00-K95",
-    "title": "K00-K14",
-    "description": "Diseases of oral cavity, salivary glands and jaws"
-  },
-  {
-    "chapter": "K00-K95",
-    "title": "K20-K31",
-    "description": "Diseases of oesophagus, stomach and duodenum"
-  },
-  {
-    "chapter": "K00-K95",
-    "title": "K35-K38",
-    "description": "Diseases of appendix"
-  },
-  {
-    "chapter": "K00-K95",
-    "title": "K40-K46",
-    "description": "Hernia"
-  },
-  {
-    "chapter": "K00-K95",
-    "title": "K50-K52",
-    "description": "Noninfective enteritis and colitis"
-  },
-  {
-    "chapter": "K00-K95",
-    "title": "K55-K63",
-    "description": "Other diseases of intestines"
-  },
-  {
-    "chapter": "K00-K95",
-    "title": "K65-K67",
-    "description": "Diseases of peritoneum"
-  },
-  {
-    "chapter": "K00-K95",
-    "title": "K70-K77",
-    "description": "Diseases of liver"
-  },
-  {
-    "chapter": "K00-K95",
-    "title": "K80-K87",
-    "description": "Disorders of gallbladder, biliary tract and pancreas"
-  },
-  {
-    "chapter": "K00-K95",
-    "title": "K90-K93",
-    "description": "Other diseases of the digestive system"
-  },
-  {
-    "chapter": "L00-L99",
-    "title": "L00-L08",
-    "description": "Infections of the skin and subcutaneous tissue"
-  },
-  {
-    "chapter": "L00-L99",
-    "title": "L10-L14",
-    "description": "Bullous disorders"
-  },
-  {
-    "chapter": "L00-L99",
-    "title": "L20-L30",
-    "description": "Dermatitis and eczema"
-  },
-  {
-    "chapter": "L00-L99",
-    "title": "L40-L45",
-    "description": "Papulosquamous disorders"
-  },
-  {
-    "chapter": "L00-L99",
-    "title": "L50-L54",
-    "description": "Urticaria and erythema"
-  },
-  {
-    "chapter": "L00-L99",
-    "title": "L55-L59",
-    "description": "Radiation-related disorders of the skin and subcutaneous tissue"
-  },
-  {
-    "chapter": "L00-L99",
-    "title": "L60-L75",
-    "description": "Disorders of skin appendages"
-  },
-  {
-    "chapter": "L00-L99",
-    "title": "L80-L99",
-    "description": "Other disorders of the skin and subcutaneous tissue"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M00-M03",
-    "description": "Infectious arthropathies"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M05-M14",
-    "description": "Inflammatory polyarthropathies"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M15-M19",
-    "description": "Arthrosis"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M20-M25",
-    "description": "Other joint disorders"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M30-M36",
-    "description": "Systemic connective tissue disorders"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M40-M43",
-    "description": "Deforming dorsopathies"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M45-M49",
-    "description": "Spondylopathies"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M50-M54",
-    "description": "Other dorsopathies"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M60-M63",
-    "description": "Disorders of muscles"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M65-M68",
-    "description": "Disorders of synovium and tendon"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M70-M79",
-    "description": "Other soft tissue disorders"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M80-M85",
-    "description": "Disorders of bone density and structure"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M86-M90",
-    "description": "Other osteopathies"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M91-M94",
-    "description": "Chondropathies"
-  },
-  {
-    "chapter": "M00-M99",
-    "title": "M95-M99",
-    "description": "Other disorders of the musculoskeletal system and connective tissue"
-  },
-  {
-    "chapter": "O00-O9A",
-    "title": "N00-N08",
-    "description": "Glomerular diseases"
-  },
-  {
-    "chapter": "O00-O9A",
-    "title": "N10-N16",
-    "description": "Renal tubulo-interstitial diseases"
-  },
-  {
-    "chapter": "O00-O9A",
-    "title": "N17-N19",
-    "description": "Renal failure"
-  },
-  {
-    "chapter": "O00-O9A",
-    "title": "N20-N23",
-    "description": "Urolithiasis"
-  },
-  {
-    "chapter": "O00-O9A",
-    "title": "N25-N29",
-    "description": "Other disorders of kidney and ureter"
-  },
-  {
-    "chapter": "O00-O9A",
-    "title": "N30-N39",
-    "description": "Other diseases of urinary system"
-  },
-  {
-    "chapter": "O00-O9A",
-    "title": "N40-N51",
-    "description": "Diseases of male genital organs"
-  },
-  {
-    "chapter": "O00-O9A",
-    "title": "N60-N64",
-    "description": "Disorders of breast"
-  },
-  {
-    "chapter": "O00-O9A",
-    "title": "N70-N77",
-    "description": "Inflammatory diseases of female pelvic organs"
-  },
-  {
-    "chapter": "O00-O9A",
-    "title": "N80-N98",
-    "description": "Noninflammatory disorders of female genital tract"
-  },
-  {
-    "chapter": "O00-O9A",
-    "title": "N99-N99",
-    "description": "Other disorders of the genitourinary system"
-  },
-  {
-    "chapter": "P00-P96",
-    "title": "O00-O08",
-    "description": "Pregnancy with abortive outcome"
-  },
-  {
-    "chapter": "P00-P96",
-    "title": "O10-O16",
-    "description": "Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium"
-  },
-  {
-    "chapter": "P00-P96",
-    "title": "O20-O29",
-    "description": "Other maternal disorders predominantly related to pregnancy"
-  },
-  {
-    "chapter": "P00-P96",
-    "title": "O30-O48",
-    "description": "Maternal care related to the fetus and amniotic cavity and possible delivery problems"
-  },
-  {
-    "chapter": "P00-P96",
-    "title": "O60-O75",
-    "description": "Complications of labour and delivery"
-  },
-  {
-    "chapter": "P00-P96",
-    "title": "O80-O84",
-    "description": "Delivery"
-  },
-  {
-    "chapter": "P00-P96",
-    "title": "O85-O92",
-    "description": "Complications predominantly related to the puerperium"
-  },
-  {
-    "chapter": "P00-P96",
-    "title": "O94-O99",
-    "description": "Other obstetric conditions, not elsewhere classified"
-  },
-  {
-    "chapter": "Q00-Q99",
-    "title": "P00-P04",
-    "description": "Fetus and newborn affected by maternal factors and by complications of pregnancy, labour and delivery"
-  },
-  {
-    "chapter": "Q00-Q99",
-    "title": "P05-P08",
-    "description": "Disorders related to length of gestation and fetal growth"
-  },
-  {
-    "chapter": "Q00-Q99",
-    "title": "P10-P15",
-    "description": "Birth trauma"
-  },
-  {
-    "chapter": "Q00-Q99",
-    "title": "P20-P29",
-    "description": "Respiratory and cardiovascular disorders specific to the perinatal period"
-  },
-  {
-    "chapter": "Q00-Q99",
-    "title": "P35-P39",
-    "description": "Infections specific to the perinatal period"
-  },
-  {
-    "chapter": "Q00-Q99",
-    "title": "P50-P61",
-    "description": "Haemorrhagic and haematological disorders of fetus and newborn"
-  },
-  {
-    "chapter": "Q00-Q99",
-    "title": "P70-P74",
-    "description": "Transitory endocrine and metabolic disorders specific to fetus and newborn"
-  },
-  {
-    "chapter": "Q00-Q99",
-    "title": "P75-P78",
-    "description": "Digestive system disorders of fetus and newborn"
-  },
-  {
-    "chapter": "Q00-Q99",
-    "title": "P80-P83",
-    "description": "Conditions involving the integument and temperature regulation of fetus and newborn"
-  },
-  {
-    "chapter": "Q00-Q99",
-    "title": "P90-P96",
-    "description": "Other disorders originating in the perinatal period"
-  },
-  {
-    "chapter": "R00-R99",
-    "title": "Q00-Q07",
-    "description": "Congenital malformations of the nervous system"
-  },
-  {
-    "chapter": "R00-R99",
-    "title": "Q10-Q18",
-    "description": "Congenital malformations of eye, ear, face and neck"
-  },
-  {
-    "chapter": "R00-R99",
-    "title": "Q20-Q28",
-    "description": "Congenital malformations of the circulatory system"
-  },
-  {
-    "chapter": "R00-R99",
-    "title": "Q30-Q34",
-    "description": "Congenital malformations of the respiratory system"
-  },
-  {
-    "chapter": "R00-R99",
-    "title": "Q35-Q37",
-    "description": "Cleft lip and cleft palate"
-  },
-  {
-    "chapter": "R00-R99",
-    "title": "Q38-Q45",
-    "description": "Other congenital malformations of the digestive system"
-  },
-  {
-    "chapter": "R00-R99",
-    "title": "Q50-Q56",
-    "description": "Congenital malformations of genital organs"
-  },
-  {
-    "chapter": "R00-R99",
-    "title": "Q60-Q64",
-    "description": "Congenital malformations of the urinary system"
-  },
-  {
-    "chapter": "R00-R99",
-    "title": "Q65-Q79",
-    "description": "Congenital malformations and deformations of the musculoskeletal system"
-  },
-  {
-    "chapter": "R00-R99",
-    "title": "Q80-Q89",
-    "description": "Other congenital malformations"
-  },
-  {
-    "chapter": "R00-R99",
-    "title": "Q90-Q99",
-    "description": "Chromosomal abnormalities, not elsewhere classified"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R00-R09",
-    "description": "Symptoms and signs involving the circulatory and respiratory systems"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R10-R19",
-    "description": "Symptoms and signs involving the digestive system and abdomen"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R20-R23",
-    "description": "Symptoms and signs involving the skin and subcutaneous tissue"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R25-R29",
-    "description": "Symptoms and signs involving the nervous and musculoskeletal systems"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R30-R39",
-    "description": "Symptoms and signs involving the urinary system"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R40-R46",
-    "description": "Symptoms and signs involving cognition, perception, emotional state and behaviour"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R47-R49",
-    "description": "Symptoms and signs involving speech and voice"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R50-R69",
-    "description": "General symptoms and signs"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R70-R79",
-    "description": "Abnormal findings on examination of blood, without diagnosis"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R80-R82",
-    "description": "Abnormal findings on examination of urine, without diagnosis"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R83-R89",
-    "description": "Abnormal findings on examination of other body fluids, substances and tissues, without diagnosis"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R90-R94",
-    "description": "Abnormal findings on diagnostic imaging and in function studies, without diagnosis"
-  },
-  {
-    "chapter": "N00-N99",
-    "title": "R95-R99",
-    "description": "Ill-defined and unknown causes of mortality"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "S00-S09",
-    "description": "Injuries to the head"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "S10-S19",
-    "description": "Injuries to the neck"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "S20-S29",
-    "description": "Injuries to the thorax"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "S30-S39",
-    "description": "Injuries to the abdomen, lower back, lumbar spine and pelvis"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "S40-S49",
-    "description": "Injuries to the shoulder and upper arm"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "S50-S59",
-    "description": "Injuries to the elbow and forearm"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "S60-S69",
-    "description": "Injuries to the wrist and hand"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "S70-S79",
-    "description": "Injuries to the hip and thigh"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "S80-S89",
-    "description": "Injuries to the knee and lower leg"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "S90-S99",
-    "description": "Injuries to the ankle and foot"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T00-T07",
-    "description": "Injuries involving multiple body regions"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T08-T14",
-    "description": "Injuries to unspecified part of trunk, limb or body region"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T15-T19",
-    "description": "Effects of foreign body entering through natural orifice"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T20-T25",
-    "description": "Burns and corrosions of external body surface, specified by site"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T26-T28",
-    "description": "Burns and corrosions confined to eye and internal organs"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T29-T32",
-    "description": "Burns and corrosions of multiple and unspecified body regions"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T33-T35",
-    "description": "Frostbite"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T36-T50",
-    "description": "Poisoning by drugs, medicaments and biological substances"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T51-T65",
-    "description": "Toxic effects of substances chiefly nonmedicinal as to source"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T66-T78",
-    "description": "Other and unspecified effects of external causes"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T79-T79",
-    "description": "Certain early complications of trauma"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T80-T88",
-    "description": "Complications of surgical and medical care, not elsewhere classified"
-  },
-  {
-    "chapter": "S00-T88",
-    "title": "T90-T98",
-    "description": "Sequelae of injuries, of poisoning and of other consequences of external causes"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "V01-V09",
-    "description": "Pedestrian injured in transport accident"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "V10-V19",
-    "description": "Pedal cyclist injured in transport accident"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "V20-V29",
-    "description": "Motorcycle rider injured in transport accident"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "V30-V39",
-    "description": "Occupant of three-wheeled motor vehicle injured in transport accident"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "V40-V49",
-    "description": "Car occupant injured in transport accident"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "V50-V59",
-    "description": "Occupant of pick-up truck or van injured in transport accident"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "V60-V69",
-    "description": "Occupant of heavy transport vehicle injured in transport accident"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "V70-V79",
-    "description": "Bus occupant injured in transport accident"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "V80-V89",
-    "description": "Other land transport accidents"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "V90-V94",
-    "description": "Water transport accidents"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "V95-V97",
-    "description": "Air and space transport accidents"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "V98-V99",
-    "description": "Other and unspecified transport accidents"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "W00-W19",
-    "description": "Falls"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "W20-W49",
-    "description": "Exposure to inanimate mechanical forces"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "W50-W64",
-    "description": "Exposure to animate mechanical forces"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "W65-W74",
-    "description": "Accidental drowning and submersion"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "W75-W84",
-    "description": "Other accidental threats to breathing"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "W85-W99",
-    "description": "Exposure to electric current, radiation and extreme ambient air temperature and pressure"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "X00-X09",
-    "description": "Exposure to smoke, fire and flames"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "X10-X19",
-    "description": "Contact with heat and hot substances"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "X20-X29",
-    "description": "Contact with venomous animals and plants"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "X30-X39",
-    "description": "Exposure to forces of nature"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "X40-X49",
-    "description": "Accidental poisoning by and exposure to noxious substances"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "X50-X57",
-    "description": "Overexertion, travel and privation"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "X58-X59",
-    "description": "Accidental exposure to other and unspecified factors"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "X60-X84",
-    "description": "Intentional self-harm"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "X85-Y09",
-    "description": "Assault"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "Y10-Y34",
-    "description": "Event of undetermined intent"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "Y35-Y36",
-    "description": "Legal intervention and operations of war"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "Y40-Y59",
-    "description": "Drugs, medicaments and biological substances causing adverse effects in therapeutic use"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "Y60-Y69",
-    "description": "Misadventures to patients during surgical and medical care"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "Y70-Y82",
-    "description": "Medical devices associated with adverse incidents in diagnostic and therapeutic use"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "Y83-Y84",
-    "description": "Surgical and other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "Y85-Y89",
-    "description": "Sequelae of external causes of morbidity and mortality"
-  },
-  {
-    "chapter": "V00-Y99",
-    "title": "Y90-Y98",
-    "description": "Supplementary factors related to causes of morbidity and mortality classified elsewhere"
-  },
-  {
-    "chapter": "Z00-Z99",
-    "title": "Z00-Z13",
-    "description": "Persons encountering health services for examination and investigation"
-  },
-  {
-    "chapter": "Z00-Z99",
-    "title": "Z20-Z29",
-    "description": "Persons with potential health hazards related to communicable diseases"
-  },
-  {
-    "chapter": "Z00-Z99",
-    "title": "Z30-Z39",
-    "description": "Persons encountering health services in circumstances related to reproduction"
-  },
-  {
-    "chapter": "Z00-Z99",
-    "title": "Z40-Z54",
-    "description": "Persons encountering health services for specific procedures and health care"
-  },
-  {
-    "chapter": "Z00-Z99",
-    "title": "Z55-Z65",
-    "description": "Persons with potential health hazards related to socioeconomic and psychosocial circumstances"
-  },
-  {
-    "chapter": "Z00-Z99",
-    "title": "Z70-Z76",
-    "description": "Persons encountering health services in other circumstances"
-  },
-  {
-    "chapter": "Z00-Z99",
-    "title": "Z80-Z99",
-    "description": "Persons with potential health hazards related to family and personal history and certain conditions influencing health status"
+    "A00-B99": [
+      {
+        "title": "A00-A09",
+        "description": "Intestinal infectious diseases"
+      },
+      {
+        "title": "A15-A19",
+        "description": "Tuberculosis"
+      },
+      {
+        "title": "A20-A28",
+        "description": "Certain zoonotic bacterial diseases"
+      },
+      {
+
+        "title": "A30-A49",
+        "description": "Other bacterial diseases"
+      },
+      {
+        "title": "A50-A64",
+        "description": "Infections with a predominantly sexual mode of transmission"
+      },
+      {
+
+        "title": "A65-A69",
+        "description": "Other spirochaetal diseases"
+      },
+      {
+
+        "title": "A70-A74",
+        "description": "Other diseases caused by chlamydiae"
+      },
+      {
+
+        "title": "A75-A79",
+        "description": "Rickettsioses"
+      },
+      {
+
+        "title": "A80-A89",
+        "description": "Viral infections of the central nervous system"
+      },
+      {
+
+        "title": "A90-A99",
+        "description": "Arthropod-borne viral fevers and viral haemorrhagic fevers"
+      },
+      {
+
+        "title": "B00-B09",
+        "description": "Viral infections characterized by skin and mucous membrane lesions"
+      },
+      {
+
+        "title": "B15-B19",
+        "description": "Viral hepatitis"
+      },
+      {
+
+        "title": "B20-B24",
+        "description": "Human immunodeficiency virus [HIV] disease"
+      },
+      {
+
+        "title": "B25-B34",
+        "description": "Other viral diseases"
+      },
+      {
+
+        "title": "B35-B49",
+        "description": "Mycoses"
+      },
+      {
+
+        "title": "B50-B64",
+        "description": "Protozoal diseases"
+      },
+      {
+
+        "title": "B65-B83",
+        "description": "Helminthiases"
+      },
+      {
+
+        "title": "B85-B89",
+        "description": "Pediculosis, acariasis and other infestations"
+      },
+      {
+
+        "title": "B90-B94",
+        "description": "Sequelae of infectious and parasitic diseases"
+      },
+      {
+
+        "title": "B95-B98",
+        "description": "Bacterial, viral and other infectious agents"
+      },
+      {
+
+        "title": "B99-B99",
+        "description": "Other infectious diseases"
+      }
+    ],
+    "C00-D49": [
+      {
+
+        "title": "C00-C14",
+        "description": "Malignant neoplasms of lip, oral cavity and pharynx"
+      },
+      {
+
+        "title": "C15-C26",
+        "description": "Malignant neoplasms of digestive organs"
+      },
+      {
+
+        "title": "C30-C39",
+        "description": "Malignant neoplasms of respiratory and intrathoracic organs"
+      },
+      {
+
+        "title": "C40-C41",
+        "description": "Malignant neoplasms of bone and articular cartilage"
+      },
+      {
+
+        "title": "C43-C44",
+        "description": "Melanoma and other malignant neoplasms of skin"
+      },
+      {
+
+        "title": "C45-C49",
+        "description": "Malignant neoplasms of mesothelial and soft tissue"
+      },
+      {
+
+        "title": "C50-C50",
+        "description": "Malignant neoplasm of breast"
+      },
+      {
+
+        "title": "C51-C58",
+        "description": "Malignant neoplasms of female genital organs"
+      },
+      {
+
+        "title": "C60-C63",
+        "description": "Malignant neoplasms of male genital organs"
+      },
+      {
+
+        "title": "C64-C68",
+        "description": "Malignant neoplasms of urinary tract"
+      },
+      {
+
+        "title": "C69-C72",
+        "description": "Malignant neoplasms of eye, brain and other parts of central nervous system"
+      },
+      {
+
+        "title": "C73-C75",
+        "description": "Malignant neoplasms of thyroid and other endocrine glands"
+      },
+      {
+
+        "title": "C76-C80",
+        "description": "Malignant neoplasms of ill-defined, secondary and unspecified sites"
+      },
+      {
+
+        "title": "C81-C96",
+        "description": "Malignant neoplasms, stated or presumed to be primary, of lymphoid, haematopoietic and related tissue"
+      },
+      {
+
+        "title": "C97-C97",
+        "description": "Malignant neoplasms of independent (primary) multiple sites"
+      },
+      {
+
+        "title": "D00-D09",
+        "description": "In situ neoplasms"
+      },
+      {
+
+        "title": "D10-D36",
+        "description": "Benign neoplasms"
+      },
+      {
+
+        "title": "D37-D48",
+        "description": "Neoplasms of uncertain or unknown behaviour"
+      }
+    ],
+    "D50-D89": [
+      {
+
+        "title": "D50-D53",
+        "description": "Nutritional anaemias"
+      },
+      {
+
+        "title": "D55-D59",
+        "description": "Haemolytic anaemias"
+      },
+      {
+
+        "title": "D60-D64",
+        "description": "Aplastic and other anaemias"
+      },
+      {
+
+        "title": "D65-D69",
+        "description": "Coagulation defects, purpura and other haemorrhagic conditions"
+      },
+      {
+
+        "title": "D70-D77",
+        "description": "Other diseases of blood and blood-forming organs"
+      },
+      {
+
+        "title": "D80-D89",
+        "description": "Certain disorders involving the immune mechanism"
+      }
+    ],
+    "E00-E89": [
+      {
+
+        "title": "E00-E07",
+        "description": "Disorders of thyroid gland"
+      },
+      {
+
+        "title": "E10-E14",
+        "description": "Diabetes mellitus"
+      },
+      {
+
+        "title": "E15-E16",
+        "description": "Other disorders of glucose regulation and pancreatic internal secretion"
+      },
+      {
+
+        "title": "E20-E35",
+        "description": "Disorders of other endocrine glands"
+      },
+      {
+
+        "title": "E40-E46",
+        "description": "Malnutrition"
+      },
+      {
+
+        "title": "E50-E64",
+        "description": "Other nutritional deficiencies"
+      },
+      {
+
+        "title": "E65-E68",
+        "description": "Obesity and other hyperalimentation"
+      },
+      {
+
+        "title": "E70-E90",
+        "description": "Metabolic disorders"
+      }
+    ],
+    "F01-F99": [
+      {
+
+        "title": "F00-F09",
+        "description": "Organic, including symptomatic, mental disorders"
+      },
+      {
+
+        "title": "F10-F19",
+        "description": "Mental and behavioural disorders due to psychoactive substance use"
+      },
+      {
+
+        "title": "F20-F29",
+        "description": "Schizophrenia, schizotypal and delusional disorders"
+      },
+      {
+
+        "title": "F30-F39",
+        "description": "Mood [affective] disorders"
+      },
+      {
+
+        "title": "F40-F48",
+        "description": "Neurotic, stress-related and somatoform disorders"
+      },
+      {
+
+        "title": "F50-F59",
+        "description": "Behavioural syndromes associated with physiological disturbances and physical factors"
+      },
+      {
+
+        "title": "F60-F69",
+        "description": "Disorders of adult personality and behaviour"
+      },
+      {
+
+        "title": "F70-F79",
+        "description": "Mental retardation"
+      },
+      {
+
+        "title": "F80-F89",
+        "description": "Disorders of psychological development"
+      },
+      {
+
+        "title": "F90-F98",
+        "description": "Behavioural and emotional disorders with onset usually occurring in childhood and adolescence"
+      },
+      {
+
+        "title": "F99-F99",
+        "description": "Unspecified mental disorder"
+      }
+    ],
+    "G00-G99": [
+      {
+
+        "title": "G00-G09",
+        "description": "Inflammatory diseases of the central nervous system"
+      },
+      {
+
+        "title": "G10-G14",
+        "description": "Systemic atrophies primarily affecting the central nervous system"
+      },
+      {
+
+        "title": "G20-G26",
+        "description": "Extrapyramidal and movement disorders"
+      },
+      {
+
+        "title": "G30-G32",
+        "description": "Other degenerative diseases of the nervous system"
+      },
+      {
+
+        "title": "G35-G37",
+        "description": "Demyelinating diseases of the central nervous system"
+      },
+      {
+
+        "title": "G40-G47",
+        "description": "Episodic and paroxysmal disorders"
+      },
+      {
+
+        "title": "G50-G59",
+        "description": "Nerve, nerve root and plexus disorders"
+      },
+      {
+
+        "title": "G60-G64",
+        "description": "Polyneuropathies and other disorders of the peripheral nervous system"
+      },
+      {
+
+        "title": "G70-G73",
+        "description": "Diseases of myoneural junction and muscle"
+      },
+      {
+
+        "title": "G80-G83",
+        "description": "Cerebral palsy and other paralytic syndromes"
+      },
+      {
+
+        "title": "G90-G99",
+        "description": "Other disorders of the nervous system"
+      }
+    ],
+    "H00-H59": [
+      {
+
+        "title": "H00-H06",
+        "description": "Disorders of eyelid, lacrimal system and orbit"
+      },
+      {
+
+        "title": "H10-H13",
+        "description": "Disorders of conjunctiva"
+      },
+      {
+
+        "title": "H15-H22",
+        "description": "Disorders of sclera, cornea, iris and ciliary body"
+      },
+      {
+
+        "title": "H25-H28",
+        "description": "Disorders of lens"
+      },
+      {
+
+        "title": "H30-H36",
+        "description": "Disorders of choroid and retina"
+      },
+      {
+
+        "title": "H40-H42",
+        "description": "Glaucoma"
+      },
+      {
+
+        "title": "H43-H45",
+        "description": "Disorders of vitreous body and globe"
+      },
+      {
+
+        "title": "H46-H48",
+        "description": "Disorders of optic nerve and visual pathways"
+      },
+      {
+
+        "title": "H49-H52",
+        "description": "Disorders of ocular muscles, binocular movement, accommodation and refraction"
+      },
+      {
+
+        "title": "H53-H54",
+        "description": "Visual disturbances and blindness"
+      },
+      {
+
+        "title": "H55-H59",
+        "description": "Other disorders of eye and adnexa"
+      }
+    ],
+    "H60-H95": [
+      {
+
+        "title": "H60-H62",
+        "description": "Diseases of external ear"
+      },
+      {
+
+        "title": "H65-H75",
+        "description": "Diseases of middle ear and mastoid"
+      },
+      {
+
+        "title": "H80-H83",
+        "description": "Diseases of inner ear"
+      },
+      {
+
+        "title": "H90-H95",
+        "description": "Other disorders of ear"
+      }
+    ],
+    "I00-I95": [
+      {
+
+        "title": "I00-I02",
+        "description": "Acute rheumatic fever"
+      },
+      {
+
+        "title": "I05-I09",
+        "description": "Chronic rheumatic heart diseases"
+      },
+      {
+
+        "title": "I10-I15",
+        "description": "Hypertensive diseases"
+      },
+      {
+
+        "title": "I20-I25",
+        "description": "Ischaemic heart diseases"
+      },
+      {
+
+        "title": "I26-I28",
+        "description": "Pulmonary heart disease and diseases of pulmonary circulation"
+      },
+      {
+
+        "title": "I30-I52",
+        "description": "Other forms of heart disease"
+      },
+      {
+
+        "title": "I60-I69",
+        "description": "Cerebrovascular diseases"
+      },
+      {
+
+        "title": "I70-I79",
+        "description": "Diseases of arteries, arterioles and capillaries"
+      },
+      {
+
+        "title": "I80-I89",
+        "description": "Diseases of veins, lymphatic vessels and lymph nodes, not elsewhere classified"
+      },
+      {
+
+        "title": "I95-I99",
+        "description": "Other and unspecified disorders of the circulatory system"
+      }
+    ],
+    "J00-J99": [
+      {
+
+        "title": "J00-J06",
+        "description": "Acute upper respiratory infections"
+      },
+      {
+
+        "title": "J09-J18",
+        "description": "Influenza and pneumonia"
+      },
+      {
+
+        "title": "J20-J22",
+        "description": "Other acute lower respiratory infections"
+      },
+      {
+
+        "title": "J30-J39",
+        "description": "Other diseases of upper respiratory tract"
+      },
+      {
+
+        "title": "J40-J47",
+        "description": "Chronic lower respiratory diseases"
+      },
+      {
+
+        "title": "J60-J70",
+        "description": "Lung diseases due to external agents"
+      },
+      {
+
+        "title": "J80-J84",
+        "description": "Other respiratory diseases principally affecting the interstitium"
+      },
+      {
+
+        "title": "J85-J86",
+        "description": "Suppurative and necrotic conditions of lower respiratory tract"
+      },
+      {
+
+        "title": "J90-J94",
+        "description": "Other diseases of pleura"
+      },
+      {
+
+        "title": "J95-J99",
+        "description": "Other diseases of the respiratory system"
+      }
+    ],
+    "K00-K95": [
+      {
+
+        "title": "K00-K14",
+        "description": "Diseases of oral cavity, salivary glands and jaws"
+      },
+      {
+
+        "title": "K20-K31",
+        "description": "Diseases of oesophagus, stomach and duodenum"
+      },
+      {
+
+        "title": "K35-K38",
+        "description": "Diseases of appendix"
+      },
+      {
+
+        "title": "K40-K46",
+        "description": "Hernia"
+      },
+      {
+
+        "title": "K50-K52",
+        "description": "Noninfective enteritis and colitis"
+      },
+      {
+
+        "title": "K55-K63",
+        "description": "Other diseases of intestines"
+      },
+      {
+
+        "title": "K65-K67",
+        "description": "Diseases of peritoneum"
+      },
+      {
+
+        "title": "K70-K77",
+        "description": "Diseases of liver"
+      },
+      {
+
+        "title": "K80-K87",
+        "description": "Disorders of gallbladder, biliary tract and pancreas"
+      },
+      {
+
+        "title": "K90-K93",
+        "description": "Other diseases of the digestive system"
+      }
+    ],
+    "L00-L99": [
+      {
+
+        "title": "L00-L08",
+        "description": "Infections of the skin and subcutaneous tissue"
+      },
+      {
+
+        "title": "L10-L14",
+        "description": "Bullous disorders"
+      },
+      {
+
+        "title": "L20-L30",
+        "description": "Dermatitis and eczema"
+      },
+      {
+
+        "title": "L40-L45",
+        "description": "Papulosquamous disorders"
+      },
+      {
+
+        "title": "L50-L54",
+        "description": "Urticaria and erythema"
+      },
+      {
+
+        "title": "L55-L59",
+        "description": "Radiation-related disorders of the skin and subcutaneous tissue"
+      },
+      {
+
+        "title": "L60-L75",
+        "description": "Disorders of skin appendages"
+      },
+      {
+
+        "title": "L80-L99",
+        "description": "Other disorders of the skin and subcutaneous tissue"
+      }
+    ],
+    "M00-M99": [
+      {
+
+        "title": "M00-M03",
+        "description": "Infectious arthropathies"
+      },
+      {
+
+        "title": "M05-M14",
+        "description": "Inflammatory polyarthropathies"
+      },
+      {
+
+        "title": "M15-M19",
+        "description": "Arthrosis"
+      },
+      {
+
+        "title": "M20-M25",
+        "description": "Other joint disorders"
+      },
+      {
+
+        "title": "M30-M36",
+        "description": "Systemic connective tissue disorders"
+      },
+      {
+
+        "title": "M40-M43",
+        "description": "Deforming dorsopathies"
+      },
+      {
+
+        "title": "M45-M49",
+        "description": "Spondylopathies"
+      },
+      {
+
+        "title": "M50-M54",
+        "description": "Other dorsopathies"
+      },
+      {
+
+        "title": "M60-M63",
+        "description": "Disorders of muscles"
+      },
+      {
+
+        "title": "M65-M68",
+        "description": "Disorders of synovium and tendon"
+      },
+      {
+
+        "title": "M70-M79",
+        "description": "Other soft tissue disorders"
+      },
+      {
+
+        "title": "M80-M85",
+        "description": "Disorders of bone density and structure"
+      },
+      {
+
+        "title": "M86-M90",
+        "description": "Other osteopathies"
+      },
+      {
+
+        "title": "M91-M94",
+        "description": "Chondropathies"
+      },
+      {
+
+        "title": "M95-M99",
+        "description": "Other disorders of the musculoskeletal system and connective tissue"
+      }
+    ],
+    "N00-N99": [
+      {
+
+        "title": "N00-N08",
+        "description": "Glomerular diseases"
+      },
+      {
+
+        "title": "N10-N16",
+        "description": "Renal tubulo-interstitial diseases"
+      },
+      {
+
+        "title": "N17-N19",
+        "description": "Renal failure"
+      },
+      {
+
+        "title": "N20-N23",
+        "description": "Urolithiasis"
+      },
+      {
+
+        "title": "N25-N29",
+        "description": "Other disorders of kidney and ureter"
+      },
+      {
+
+        "title": "N30-N39",
+        "description": "Other diseases of urinary system"
+      },
+      {
+
+        "title": "N40-N51",
+        "description": "Diseases of male genital organs"
+      },
+      {
+
+        "title": "N60-N64",
+        "description": "Disorders of breast"
+      },
+      {
+
+        "title": "N70-N77",
+        "description": "Inflammatory diseases of female pelvic organs"
+      },
+      {
+
+        "title": "N80-N98",
+        "description": "Noninflammatory disorders of female genital tract"
+      },
+      {
+
+        "title": "N99-N99",
+        "description": "Other disorders of the genitourinary system"
+      }
+    ],
+    "O00-O9A": [
+      {
+
+        "title": "O00-O08",
+        "description": "Pregnancy with abortive outcome"
+      },
+      {
+
+        "title": "O10-O16",
+        "description": "Oedema, proteinuria and hypertensive disorders in pregnancy, childbirth and the puerperium"
+      },
+      {
+
+        "title": "O20-O29",
+        "description": "Other maternal disorders predominantly related to pregnancy"
+      },
+      {
+
+        "title": "O30-O48",
+        "description": "Maternal care related to the fetus and amniotic cavity and possible delivery problems"
+      },
+      {
+
+        "title": "O60-O75",
+        "description": "Complications of labour and delivery"
+      },
+      {
+
+        "title": "O80-O84",
+        "description": "Delivery"
+      },
+      {
+
+        "title": "O85-O92",
+        "description": "Complications predominantly related to the puerperium"
+      },
+      {
+
+        "title": "O94-O99",
+        "description": "Other obstetric conditions, not elsewhere classified"
+      }
+    ],
+    "P00-P96": [
+      {
+
+        "title": "P00-P04",
+        "description": "Fetus and newborn affected by maternal factors and by complications of pregnancy, labour and delivery"
+      },
+      {
+
+        "title": "P05-P08",
+        "description": "Disorders related to length of gestation and fetal growth"
+      },
+      {
+
+        "title": "P10-P15",
+        "description": "Birth trauma"
+      },
+      {
+
+        "title": "P20-P29",
+        "description": "Respiratory and cardiovascular disorders specific to the perinatal period"
+      },
+      {
+
+        "title": "P35-P39",
+        "description": "Infections specific to the perinatal period"
+      },
+      {
+
+        "title": "P50-P61",
+        "description": "Haemorrhagic and haematological disorders of fetus and newborn"
+      },
+      {
+
+        "title": "P70-P74",
+        "description": "Transitory endocrine and metabolic disorders specific to fetus and newborn"
+      },
+      {
+
+        "title": "P75-P78",
+        "description": "Digestive system disorders of fetus and newborn"
+      },
+      {
+
+        "title": "P80-P83",
+        "description": "Conditions involving the integument and temperature regulation of fetus and newborn"
+      },
+      {
+
+        "title": "P90-P96",
+        "description": "Other disorders originating in the perinatal period"
+      }
+    ],
+    "Q00-Q99": [
+      {
+
+        "title": "Q00-Q07",
+        "description": "Congenital malformations of the nervous system"
+      },
+      {
+
+        "title": "Q10-Q18",
+        "description": "Congenital malformations of eye, ear, face and neck"
+      },
+      {
+
+        "title": "Q20-Q28",
+        "description": "Congenital malformations of the circulatory system"
+      },
+      {
+
+        "title": "Q30-Q34",
+        "description": "Congenital malformations of the respiratory system"
+      },
+      {
+
+        "title": "Q35-Q37",
+        "description": "Cleft lip and cleft palate"
+      },
+      {
+
+        "title": "Q38-Q45",
+        "description": "Other congenital malformations of the digestive system"
+      },
+      {
+
+        "title": "Q50-Q56",
+        "description": "Congenital malformations of genital organs"
+      },
+      {
+
+        "title": "Q60-Q64",
+        "description": "Congenital malformations of the urinary system"
+      },
+      {
+
+        "title": "Q65-Q79",
+        "description": "Congenital malformations and deformations of the musculoskeletal system"
+      },
+      {
+
+        "title": "Q80-Q89",
+        "description": "Other congenital malformations"
+      },
+      {
+
+        "title": "Q90-Q99",
+        "description": "Chromosomal abnormalities, not elsewhere classified"
+      }
+    ],
+    "R00-R99": [
+      {
+
+        "title": "R00-R09",
+        "description": "Symptoms and signs involving the circulatory and respiratory systems"
+      },
+      {
+
+        "title": "R10-R19",
+        "description": "Symptoms and signs involving the digestive system and abdomen"
+      },
+      {
+
+        "title": "R20-R23",
+        "description": "Symptoms and signs involving the skin and subcutaneous tissue"
+      },
+      {
+
+        "title": "R25-R29",
+        "description": "Symptoms and signs involving the nervous and musculoskeletal systems"
+      },
+      {
+
+        "title": "R30-R39",
+        "description": "Symptoms and signs involving the urinary system"
+      },
+      {
+
+        "title": "R40-R46",
+        "description": "Symptoms and signs involving cognition, perception, emotional state and behaviour"
+      },
+      {
+
+        "title": "R47-R49",
+        "description": "Symptoms and signs involving speech and voice"
+      },
+      {
+
+        "title": "R50-R69",
+        "description": "General symptoms and signs"
+      },
+      {
+
+        "title": "R70-R79",
+        "description": "Abnormal findings on examination of blood, without diagnosis"
+      },
+      {
+
+        "title": "R80-R82",
+        "description": "Abnormal findings on examination of urine, without diagnosis"
+      },
+      {
+
+        "title": "R83-R89",
+        "description": "Abnormal findings on examination of other body fluids, substances and tissues, without diagnosis"
+      },
+      {
+
+        "title": "R90-R94",
+        "description": "Abnormal findings on diagnostic imaging and in function studies, without diagnosis"
+      },
+      {
+
+        "title": "R95-R99",
+        "description": "Ill-defined and unknown causes of mortality"
+      }
+    ],
+    "S00-T88": [
+      {
+
+        "title": "S00-S09",
+        "description": "Injuries to the head"
+      },
+      {
+
+        "title": "S10-S19",
+        "description": "Injuries to the neck"
+      },
+      {
+
+        "title": "S20-S29",
+        "description": "Injuries to the thorax"
+      },
+      {
+
+        "title": "S30-S39",
+        "description": "Injuries to the abdomen, lower back, lumbar spine and pelvis"
+      },
+      {
+
+        "title": "S40-S49",
+        "description": "Injuries to the shoulder and upper arm"
+      },
+      {
+
+        "title": "S50-S59",
+        "description": "Injuries to the elbow and forearm"
+      },
+      {
+
+        "title": "S60-S69",
+        "description": "Injuries to the wrist and hand"
+      },
+      {
+
+        "title": "S70-S79",
+        "description": "Injuries to the hip and thigh"
+      },
+      {
+
+        "title": "S80-S89",
+        "description": "Injuries to the knee and lower leg"
+      },
+      {
+
+        "title": "S90-S99",
+        "description": "Injuries to the ankle and foot"
+      },
+      {
+
+        "title": "T00-T07",
+        "description": "Injuries involving multiple body regions"
+      },
+      {
+
+        "title": "T08-T14",
+        "description": "Injuries to unspecified part of trunk, limb or body region"
+      },
+      {
+
+        "title": "T15-T19",
+        "description": "Effects of foreign body entering through natural orifice"
+      },
+      {
+
+        "title": "T20-T25",
+        "description": "Burns and corrosions of external body surface, specified by site"
+      },
+      {
+
+        "title": "T26-T28",
+        "description": "Burns and corrosions confined to eye and internal organs"
+      },
+      {
+
+        "title": "T29-T32",
+        "description": "Burns and corrosions of multiple and unspecified body regions"
+      },
+      {
+
+        "title": "T33-T35",
+        "description": "Frostbite"
+      },
+      {
+
+        "title": "T36-T50",
+        "description": "Poisoning by drugs, medicaments and biological substances"
+      },
+      {
+
+        "title": "T51-T65",
+        "description": "Toxic effects of substances chiefly nonmedicinal as to source"
+      },
+      {
+
+        "title": "T66-T78",
+        "description": "Other and unspecified effects of external causes"
+      },
+      {
+
+        "title": "T79-T79",
+        "description": "Certain early complications of trauma"
+      },
+      {
+
+        "title": "T80-T88",
+        "description": "Complications of surgical and medical care, not elsewhere classified"
+      },
+      {
+
+        "title": "T90-T98",
+        "description": "Sequelae of injuries, of poisoning and of other consequences of external causes"
+      }
+    ],
+    "V00-Y99": [
+      {
+
+        "title": "V01-V09",
+        "description": "Pedestrian injured in transport accident"
+      },
+      {
+
+        "title": "V10-V19",
+        "description": "Pedal cyclist injured in transport accident"
+      },
+      {
+
+        "title": "V20-V29",
+        "description": "Motorcycle rider injured in transport accident"
+      },
+      {
+
+        "title": "V30-V39",
+        "description": "Occupant of three-wheeled motor vehicle injured in transport accident"
+      },
+      {
+
+        "title": "V40-V49",
+        "description": "Car occupant injured in transport accident"
+      },
+      {
+
+        "title": "V50-V59",
+        "description": "Occupant of pick-up truck or van injured in transport accident"
+      },
+      {
+
+        "title": "V60-V69",
+        "description": "Occupant of heavy transport vehicle injured in transport accident"
+      },
+      {
+
+        "title": "V70-V79",
+        "description": "Bus occupant injured in transport accident"
+      },
+      {
+
+        "title": "V80-V89",
+        "description": "Other land transport accidents"
+      },
+      {
+
+        "title": "V90-V94",
+        "description": "Water transport accidents"
+      },
+      {
+
+        "title": "V95-V97",
+        "description": "Air and space transport accidents"
+      },
+      {
+
+        "title": "V98-V99",
+        "description": "Other and unspecified transport accidents"
+      },
+      {
+
+        "title": "W00-W19",
+        "description": "Falls"
+      },
+      {
+
+        "title": "W20-W49",
+        "description": "Exposure to inanimate mechanical forces"
+      },
+      {
+
+        "title": "W50-W64",
+        "description": "Exposure to animate mechanical forces"
+      },
+      {
+
+        "title": "W65-W74",
+        "description": "Accidental drowning and submersion"
+      },
+      {
+
+        "title": "W75-W84",
+        "description": "Other accidental threats to breathing"
+      },
+      {
+
+        "title": "W85-W99",
+        "description": "Exposure to electric current, radiation and extreme ambient air temperature and pressure"
+      },
+      {
+
+        "title": "X00-X09",
+        "description": "Exposure to smoke, fire and flames"
+      },
+      {
+
+        "title": "X10-X19",
+        "description": "Contact with heat and hot substances"
+      },
+      {
+
+        "title": "X20-X29",
+        "description": "Contact with venomous animals and plants"
+      },
+      {
+
+        "title": "X30-X39",
+        "description": "Exposure to forces of nature"
+      },
+      {
+
+        "title": "X40-X49",
+        "description": "Accidental poisoning by and exposure to noxious substances"
+      },
+      {
+
+        "title": "X50-X57",
+        "description": "Overexertion, travel and privation"
+      },
+      {
+
+        "title": "X58-X59",
+        "description": "Accidental exposure to other and unspecified factors"
+      },
+      {
+
+        "title": "X60-X84",
+        "description": "Intentional self-harm"
+      },
+      {
+
+        "title": "X85-Y09",
+        "description": "Assault"
+      },
+      {
+
+        "title": "Y10-Y34",
+        "description": "Event of undetermined intent"
+      },
+      {
+
+        "title": "Y35-Y36",
+        "description": "Legal intervention and operations of war"
+      },
+      {
+
+        "title": "Y40-Y59",
+        "description": "Drugs, medicaments and biological substances causing adverse effects in therapeutic use"
+      },
+      {
+
+        "title": "Y60-Y69",
+        "description": "Misadventures to patients during surgical and medical care"
+      },
+      {
+
+        "title": "Y70-Y82",
+        "description": "Medical devices associated with adverse incidents in diagnostic and therapeutic use"
+      },
+      {
+
+        "title": "Y83-Y84",
+        "description": "Surgical and other medical procedures as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure"
+      },
+      {
+
+        "title": "Y85-Y89",
+        "description": "Sequelae of external causes of morbidity and mortality"
+      },
+      {
+
+        "title": "Y90-Y98",
+        "description": "Supplementary factors related to causes of morbidity and mortality classified elsewhere"
+      }
+    ],
+    "Z00-Z99": [
+      {
+
+        "title": "Z00-Z13",
+        "description": "Persons encountering health services for examination and investigation"
+      },
+      {
+
+        "title": "Z20-Z29",
+        "description": "Persons with potential health hazards related to communicable diseases"
+      },
+      {
+
+        "title": "Z30-Z39",
+        "description": "Persons encountering health services in circumstances related to reproduction"
+      },
+      {
+
+        "title": "Z40-Z54",
+        "description": "Persons encountering health services for specific procedures and health care"
+      },
+      {
+
+        "title": "Z55-Z65",
+        "description": "Persons with potential health hazards related to socioeconomic and psychosocial circumstances"
+      },
+      {
+
+        "title": "Z70-Z76",
+        "description": "Persons encountering health services in other circumstances"
+      },
+      {
+
+        "title": "Z80-Z99",
+        "description": "Persons with potential health hazards related to family and personal history and certain conditions influencing health status"
+      }
+    ]
   }
-]
-}
