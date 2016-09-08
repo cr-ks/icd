@@ -15,10 +15,11 @@ var Main = React.createClass({
   },
   render: function() {
     var currentTitle = currentYear + ' ICD-10-CM Codes';
+    var currentPage = 'Main';
     return (
       <div>
       <Nav year={currentYear}/>
-      <Content title={currentTitle} cards={this.state.cards}/>
+      <Content title={currentTitle} cards={this.state.cards} page={currentPage}/>
       </div>
     );
   },
@@ -37,10 +38,11 @@ var Blocks = React.createClass({
   render: function() {
     var currentChapter = this.props.params.title;
     var currentTitle = currentYear + ' ICD-10-CM Codes: ' + currentChapter;
+    var currentPage = 'Blocks';
     return (
       <div>
       <Nav year={currentYear}/>
-      <Content title={currentTitle} cards={this.state.chapters}/>
+      <Content title={currentTitle} cards={this.state.chapters} page={currentPage}/>
       </div>
     );
   },
@@ -60,12 +62,12 @@ var Codes = React.createClass({
   },
   render: function() {
     var currentChapter = this.props.params.title;
-    console.log('hi: ' + this.state.info);
+    var currentPage = 'Codes';
     var currentTitle = this.state.info.section + ': ' + this.state.info.description;
     return (
       <div>
       <Nav year={currentYear}/>
-      <Content title={currentTitle} cards={this.state.chapters}/>
+      <Content title={currentTitle} cards={this.state.chapters} page={currentPage}/>
       </div>
     );
   },
