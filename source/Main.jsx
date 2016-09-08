@@ -48,7 +48,7 @@ var Blocks = React.createClass({
     var title = this.props.params.title;
     var query = '/api/chapters/' + title;
     $.getJSON(query, (function(result) {
-      var data = result[0][title];
+      var data = result;
       this.setState({chapters: data});
     }.bind(this)));
   }
@@ -56,11 +56,12 @@ var Blocks = React.createClass({
 
 var Codes = React.createClass({
   getInitialState: function() {
-    return {chapters: []};
+    return {chapters: [], info: []};
   },
   render: function() {
     var currentChapter = this.props.params.title;
-    var currentTitle = currentYear + ' ICD-10-CM Codes: ' + currentChapter;
+    console.log('hi: ' + this.state.info);
+    var currentTitle = this.state.info.section + ': ' + this.state.info.description;
     return (
       <div>
       <Nav year={currentYear}/>
@@ -70,10 +71,15 @@ var Codes = React.createClass({
   },
   componentDidMount: function() {
     var title = this.props.params.title;
-    var query = '/api/chapters/' + title;
+    var query = '/api/codes/' + title;
     $.getJSON(query, (function(result) {
-      var data = result[0][title];
+      var data = result;
       this.setState({chapters: data});
+    }.bind(this)));
+    var queryTwo = '/api/code_title/' + title;
+    $.getJSON(queryTwo, (function(result) {
+      var data = result[0];
+      this.setState({info: data});
     }.bind(this)));
   }
 });
