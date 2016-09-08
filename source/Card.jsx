@@ -8,11 +8,21 @@ var Categories = React.createClass({
   render: function() {
     var page = this.props.page;
     var linkTo;
-    console.log('Current Page: ' + page);
     if (page === 'Main') {
       linkTo = '/chapters/';
-    } else {
+    } else if (page === 'Blocks'){
       linkTo = '/codes/';
+    } else  if (page === 'Codes'){
+      linkTo = '/code/';
+    } else {
+      return (
+        <div>
+        <div className="card">
+        <div className="card-title">{this.props.card.title}</div>
+        <div className="card-content">{this.props.card.description}</div>
+        </div>
+        </div>
+      )
     }
     return (
       <div>

@@ -36,16 +36,28 @@ var Widget = React.createClass({
 var Content = React.createClass({
   render: function() {
     var page = this.props.page;
+    var text = this.props.filterText;
+    var cardTable = [];
+    if (page == 'Search') {
+      this.props.cards.forEach(function(card) {
+        if (card.description.indexOf(text) === -1) {
+          return;
+        }
+        if (cardTable.length <= 50) {
+          cardTable.push(<Card key={card.title} card={card} page={page}/>);
+        }
+      });
+    } else {
     var cardTable = this.props.cards.map(function(card) {
       return <Card key={card.title} card={card} page={page}/>
     });
-    var button, accountButton;
+    }
+    var button;
+    var accountButton = <button className="homebutton" >My Codes</button>;
     if (page !== 'Main') {
       button = <BackButton />;
-      accountButton = <button className="homebutton" >My Account</button>;
     } else {
       button = <button className="greybutton" >Go Back</button>;
-      accountButton = <button className="homebutton" >My Account</button>;
     }
     $(function() {
       var navTop = $('.backbutton-container').offset().top;

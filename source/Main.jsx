@@ -31,6 +31,37 @@ var Main = React.createClass({
   }
 });
 
+//Search Component
+var Search = React.createClass({
+  getInitialState: function() {
+    return {filterText: '', chapters: []};
+  },
+  handleUserInput: function(filterText) {
+    console.log(filterText);
+    this.setState({
+      filterText: filterText,
+    });
+  },
+  render: function() {
+    var currentChapter = this.props.params.title;
+    var currentTitle = 'Search results for: ' + this.state.filterText;
+    var currentPage = 'Search';
+    return (
+      <div>
+      <Nav year={currentYear} filterText={this.state.filerTest} onUserInput={this.handleUserInput}/>
+      <Content title={currentTitle} filterText={this.state.filterText} cards={this.state.chapters} page={currentPage}/>
+      </div>
+    );
+  },
+  componentDidMount: function() {
+    var query = '/api/codes/';
+    $.getJSON(query, (function(result) {
+      var data = result;
+      this.setState({chapters: data});
+    }.bind(this)));
+  }
+});
+
 var Blocks = React.createClass({
   getInitialState: function() {
     return {chapters: []};
@@ -86,4 +117,29 @@ var Codes = React.createClass({
   }
 });
 
-module.exports = { Main: Main, Blocks: Blocks, Codes: Codes};
+var Code = React.createClass({
+  getInitialState: function() {
+    return {chapters: [{description:"this:that"}]};
+  },
+  render: function() {
+    var currentChapter = this.props.params.title;
+    var currentTitle = this.state.chapters[0].title + ' > ' + this.state.chapters[0].description;
+    var currentPage = 'Code';
+    return (
+      <div>
+      <Nav year={currentYear}/>
+      <Content title={currentTitle} cards={this.state.chapters} page={currentPage}/>
+      </div>
+    );
+  },
+  componentDidMount: function() {
+    var title = this.props.params.title;
+    var query = '/api/code/' + title;
+    $.getJSON(query, (function(result) {
+      var data = result;
+      this.setState({chapters: data});
+    }.bind(this)));
+  }
+});
+
+module.exports = { Main: Main, Blocks: Blocks, Codes: Codes, Search: Search, Code: Code};

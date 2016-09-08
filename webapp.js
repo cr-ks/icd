@@ -9,9 +9,9 @@ app.use(express.static('static'));
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
-app.get('/search', function(req, res) {
+app.get('/api/search', function(req, res) {
   var query = req.param('query');
-  db.collection("codes").find( { $search: 'malignant' }  ).toArray(function(err, docs) {
+  db.collection("codes").find( { description: new RegExp(query, 'i') }  ).toArray(function(err, docs) {
     res.json(docs);
   });
 });
@@ -45,6 +45,13 @@ app.get('/api/codes', function(req, res) {
 app.get('/api/codes/:id', function(req, res) {
   var id = req.params.id.substring(0,3);
   db.collection("codes").find({chapter:id}).toArray(function(err, docs) {
+    res.json(docs);
+  });
+});
+
+app.get('/api/code/:id', function(req, res) {
+  var id = req.params.id;
+  db.collection("codes").find({title:id}).toArray(function(err, docs) {
     res.json(docs);
   });
 });

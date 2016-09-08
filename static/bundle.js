@@ -37034,19 +37034,24 @@ var browserHistory = require('react-router').browserHistory;
 var Main = require('./Main.jsx').Main;
 var Blocks = require('./Main.jsx').Blocks;
 var Codes = require('./Main.jsx').Codes;
+var Search = require('./Main.jsx').Search;
+var Code = require('./Main.jsx').Code;
 
 ReactDOM.render(React.createElement(
   Router,
   { history: browserHistory },
   React.createElement(Route, { path: '/', component: Main }),
+  React.createElement(Route, { path: '/search', component: Search }),
   React.createElement(Route, { path: '/chapters/:title', component: Blocks }),
-  React.createElement(Route, { path: '/codes/:title', component: Codes })
+  React.createElement(Route, { path: '/codes/:title', component: Codes }),
+  React.createElement(Route, { path: '/code/:title', component: Code })
 ), document.getElementById('main'));
 
 },{"./Main.jsx":246,"react":240,"react-dom":54,"react-router":84}],244:[function(require,module,exports){
 'use strict';
 
 //Imports
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Link = require('react-router').Link;
@@ -37058,34 +37063,16 @@ var Categories = React.createClass({
   render: function render() {
     var page = this.props.page;
     var linkTo;
-    console.log('Current Page: ' + page);
     if (page === 'Main') {
       linkTo = '/chapters/';
-    } else {
+    } else if (page === 'Blocks') {
       linkTo = '/codes/';
+    } else if (page === 'Codes') {
+      linkTo = '/code/';
+    } else {
+      return React.createElement('div', null, React.createElement('div', { className: 'card' }, React.createElement('div', { className: 'card-title' }, this.props.card.title), React.createElement('div', { className: 'card-content' }, this.props.card.description)));
     }
-    return React.createElement(
-      'div',
-      null,
-      React.createElement(
-        Link,
-        { to: linkTo + this.props.card.title },
-        React.createElement(
-          'div',
-          { className: 'card' },
-          React.createElement(
-            'div',
-            { className: 'card-title' },
-            this.props.card.title
-          ),
-          React.createElement(
-            'div',
-            { className: 'card-content' },
-            this.props.card.description
-          )
-        )
-      )
-    );
+    return React.createElement('div', null, React.createElement(Link, { to: linkTo + this.props.card.title }, React.createElement('div', { className: 'card' }, React.createElement('div', { className: 'card-title' }, this.props.card.title), React.createElement('div', { className: 'card-content' }, this.props.card.description))));
   }
 });
 
@@ -37095,7 +37082,6 @@ module.exports = Categories;
 'use strict';
 
 //Imports
-
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Router = require('react-router');
@@ -37112,7 +37098,11 @@ var BackButton = React.createClass({
 
   mixins: [History],
   render: function render() {
-    return React.createElement('button', { className: 'backbutton', onClick: this.history.goBack }, 'Go Back');
+    return React.createElement(
+      'button',
+      { className: 'backbutton', onClick: this.history.goBack },
+      'Go Back'
+    );
   }
 });
 
@@ -37120,7 +37110,20 @@ var Widget = React.createClass({
   displayName: 'Widget',
 
   render: function render() {
-    return React.createElement('div', null, React.createElement('div', { className: 'widget-outer-container' }, React.createElement('div', { className: 'widget-container' }), React.createElement('p', null, 'Sponsored Content')));
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'div',
+        { className: 'widget-outer-container' },
+        React.createElement('div', { className: 'widget-container' }),
+        React.createElement(
+          'p',
+          null,
+          'Sponsored Content'
+        )
+      )
+    );
   }
 });
 
@@ -37130,16 +37133,36 @@ var Content = React.createClass({
 
   render: function render() {
     var page = this.props.page;
-    var cardTable = this.props.cards.map(function (card) {
-      return React.createElement(Card, { key: card.title, card: card, page: page });
-    });
-    var button, accountButton;
+    var text = this.props.filterText;
+    var cardTable = [];
+    if (page == 'Search') {
+      this.props.cards.forEach(function (card) {
+        if (card.description.indexOf(text) === -1) {
+          return;
+        }
+        if (cardTable.length <= 50) {
+          cardTable.push(React.createElement(Card, { key: card.title, card: card, page: page }));
+        }
+      });
+    } else {
+      var cardTable = this.props.cards.map(function (card) {
+        return React.createElement(Card, { key: card.title, card: card, page: page });
+      });
+    }
+    var button;
+    var accountButton = React.createElement(
+      'button',
+      { className: 'homebutton' },
+      'My Codes'
+    );
     if (page !== 'Main') {
       button = React.createElement(BackButton, null);
-      accountButton = React.createElement('button', { className: 'homebutton' }, 'My Account');
     } else {
-      button = React.createElement('button', { className: 'greybutton' }, 'Go Back');
-      accountButton = React.createElement('button', { className: 'homebutton' }, 'My Account');
+      button = React.createElement(
+        'button',
+        { className: 'greybutton' },
+        'Go Back'
+      );
     }
     $(function () {
       var navTop = $('.backbutton-container').offset().top;
@@ -37154,10 +37177,39 @@ var Content = React.createClass({
         }
       });
     });
-    return React.createElement('div', null, React.createElement('div', { className: 'main-container' }, React.createElement('div', { className: 'headline' }, this.props.title), React.createElement('div', { className: 'backbutton-container' }, accountButton, button, React.createElement(Widget, null)), React.createElement('div', { className: 'clear' }), React.createElement('div', { className: 'card-container' }, React.createElement(ReactCSSTransitionGroup, {
-      transitionName: 'example',
-      transitionEnterTimeout: 500,
-      transitionLeaveTimeout: 300 }, cardTable))));
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'div',
+        { className: 'main-container' },
+        React.createElement(
+          'div',
+          { className: 'headline' },
+          this.props.title
+        ),
+        React.createElement(
+          'div',
+          { className: 'backbutton-container' },
+          accountButton,
+          button,
+          React.createElement(Widget, null)
+        ),
+        React.createElement('div', { className: 'clear' }),
+        React.createElement(
+          'div',
+          { className: 'card-container' },
+          React.createElement(
+            ReactCSSTransitionGroup,
+            {
+              transitionName: 'example',
+              transitionEnterTimeout: 500,
+              transitionLeaveTimeout: 300 },
+            cardTable
+          )
+        )
+      )
+    );
   }
 });
 
@@ -37167,6 +37219,7 @@ module.exports = Content;
 'use strict';
 
 //Imports
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 var $ = require('jquery');
@@ -37186,17 +37239,40 @@ var Main = React.createClass({
   render: function render() {
     var currentTitle = currentYear + ' ICD-10-CM Codes';
     var currentPage = 'Main';
-    return React.createElement(
-      'div',
-      null,
-      React.createElement(Nav, { year: currentYear }),
-      React.createElement(Content, { title: currentTitle, cards: this.state.cards, page: currentPage })
-    );
+    return React.createElement('div', null, React.createElement(Nav, { year: currentYear }), React.createElement(Content, { title: currentTitle, cards: this.state.cards, page: currentPage }));
   },
   componentDidMount: function componentDidMount() {
     $.getJSON('/api/chapters', function (result) {
       var data = result[0].chapters;
       this.setState({ cards: data });
+    }.bind(this));
+  }
+});
+
+//Search Component
+var Search = React.createClass({
+  displayName: 'Search',
+
+  getInitialState: function getInitialState() {
+    return { filterText: '', chapters: [] };
+  },
+  handleUserInput: function handleUserInput(filterText) {
+    console.log(filterText);
+    this.setState({
+      filterText: filterText
+    });
+  },
+  render: function render() {
+    var currentChapter = this.props.params.title;
+    var currentTitle = 'Search results for: ' + this.state.filterText;
+    var currentPage = 'Search';
+    return React.createElement('div', null, React.createElement(Nav, { year: currentYear, filterText: this.state.filerTest, onUserInput: this.handleUserInput }), React.createElement(Content, { title: currentTitle, filterText: this.state.filterText, cards: this.state.chapters, page: currentPage }));
+  },
+  componentDidMount: function componentDidMount() {
+    var query = '/api/codes/';
+    $.getJSON(query, function (result) {
+      var data = result;
+      this.setState({ chapters: data });
     }.bind(this));
   }
 });
@@ -37211,12 +37287,7 @@ var Blocks = React.createClass({
     var currentChapter = this.props.params.title;
     var currentTitle = currentYear + ' ICD-10-CM Codes: ' + currentChapter;
     var currentPage = 'Blocks';
-    return React.createElement(
-      'div',
-      null,
-      React.createElement(Nav, { year: currentYear }),
-      React.createElement(Content, { title: currentTitle, cards: this.state.chapters, page: currentPage })
-    );
+    return React.createElement('div', null, React.createElement(Nav, { year: currentYear }), React.createElement(Content, { title: currentTitle, cards: this.state.chapters, page: currentPage }));
   },
   componentDidMount: function componentDidMount() {
     var title = this.props.params.title;
@@ -37238,12 +37309,7 @@ var Codes = React.createClass({
     var currentChapter = this.props.params.title;
     var currentPage = 'Codes';
     var currentTitle = this.state.info.section + ': ' + this.state.info.description;
-    return React.createElement(
-      'div',
-      null,
-      React.createElement(Nav, { year: currentYear }),
-      React.createElement(Content, { title: currentTitle, cards: this.state.chapters, page: currentPage })
-    );
+    return React.createElement('div', null, React.createElement(Nav, { year: currentYear }), React.createElement(Content, { title: currentTitle, cards: this.state.chapters, page: currentPage }));
   },
   componentDidMount: function componentDidMount() {
     var title = this.props.params.title;
@@ -37260,7 +37326,29 @@ var Codes = React.createClass({
   }
 });
 
-module.exports = { Main: Main, Blocks: Blocks, Codes: Codes };
+var Code = React.createClass({
+  displayName: 'Code',
+
+  getInitialState: function getInitialState() {
+    return { chapters: [{ description: "this:that" }] };
+  },
+  render: function render() {
+    var currentChapter = this.props.params.title;
+    var currentTitle = this.state.chapters[0].title + ' > ' + this.state.chapters[0].description;
+    var currentPage = 'Code';
+    return React.createElement('div', null, React.createElement(Nav, { year: currentYear }), React.createElement(Content, { title: currentTitle, cards: this.state.chapters, page: currentPage }));
+  },
+  componentDidMount: function componentDidMount() {
+    var title = this.props.params.title;
+    var query = '/api/code/' + title;
+    $.getJSON(query, function (result) {
+      var data = result;
+      this.setState({ chapters: data });
+    }.bind(this));
+  }
+});
+
+module.exports = { Main: Main, Blocks: Blocks, Codes: Codes, Search: Search, Code: Code };
 
 },{"./Content.jsx":245,"./Nav.jsx":247,"jquery":49,"react":240,"react-dom":54}],247:[function(require,module,exports){
 'use strict';
@@ -37274,6 +37362,9 @@ var Link = require('react-router').Link;
 var Nav = React.createClass({
   displayName: 'Nav',
 
+  handleChange: function handleChange() {
+    this.props.onUserInput(this.refs.filterTextInput.value);
+  },
   render: function render() {
     return React.createElement(
       'div',
@@ -37286,9 +37377,13 @@ var Nav = React.createClass({
           { className: 'search' },
           React.createElement(
             'form',
-            { action: '/search' },
+            null,
             'ICD-10-CM Code Search',
-            React.createElement('input', { type: 'text', name: 'query' })
+            React.createElement(
+              Link,
+              { to: '/Search' },
+              React.createElement('input', { type: 'text', placeholder: 'Click here to search...', value: this.props.filterText, ref: 'filterTextInput', onChange: this.handleChange })
+            )
           )
         ),
         React.createElement(
@@ -37349,11 +37444,15 @@ var Nav = React.createClass({
               'CODE CONVERSION'
             ),
             React.createElement(
-              'li',
-              null,
-              React.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' }),
-              React.createElement('br', null),
-              'CODE LOOKUP'
+              Link,
+              { to: '/search' },
+              React.createElement(
+                'li',
+                null,
+                React.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' }),
+                React.createElement('br', null),
+                'CODE LOOKUP'
+              )
             )
           )
         ),
