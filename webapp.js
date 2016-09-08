@@ -6,6 +6,15 @@ var app = express();
 var db;
 
 app.use(express.static('static'));
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
+
+app.get('/search', function(req, res) {
+  var query = req.param('query');
+  db.collection("codes").find( { $search: 'malignant' }  ).toArray(function(err, docs) {
+    res.json(docs);
+  });
+});
 
 app.get('/api/chapters', function(req, res) {
   db.collection("chapters").find().toArray(function(err, docs) {

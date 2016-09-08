@@ -9,14 +9,14 @@ var Nav = React.createClass({
     return (
       <div>
         <div className="top-nav">
-          <span className="search"><form action="#">ICD-10-CM Code Search<input type="text" name="search" /></form></span>
+          <span className="search"><form action="/search">ICD-10-CM Code Search<input type="text" name="query" /></form></span>
           <span className="login"><a href="#">Login</a> | <a href="#">Signup</a></span>
         </div>
         <div className="side-nav">
-          <Link to={'/'}><div className="logo">eICD10</div><div className="logo-back">CODES</div></Link> 
+          <Link to={'/'}><div className="logo">eICD10</div><div className="logo-back">CODES</div></Link>
           <div className="links">
             <ul>
-              <li><i className="fa fa-heartbeat" aria-hidden="true"></i><br />ICD CODES</li>
+              <Link to={'/'}><li><i className="fa fa-heartbeat" aria-hidden="true"></i><br />ICD CODES</li></Link>
               <li><i className="fa fa-exchange" aria-hidden="true"></i><br />CODE CONVERSION</li>
               <li><i className="fa fa-search" aria-hidden="true"></i><br />CODE LOOKUP</li>
             </ul>

@@ -1,6 +1,6 @@
 .top-nav {
   width: 100%;
-  height: 60px;
+  height: 50px;
   margin: 0 0 2%;
   padding: 0;
   background-color: #314B7E;
@@ -11,12 +11,12 @@
   width: auto;
   float: right;
   height: auto;
-  margin: 20px 20px 0 0;
+  margin: 1% 20px 0 0;
   padding: 0;
   text-align: left;
   color: #fff;
   font-family: "Muli", sans-serif;
-  font-size: 1em;
+  font-size: .8em;
 }
 .login a {
   color: #fff;
@@ -26,25 +26,25 @@
   width: auto;
   height: auto;
   float: left;
-  margin: 20px 250px;
+  margin: 1% 250px;
   padding: 0;
   text-align: right;
   color: #fff;
   font-family: "Muli", sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
 }
 .search input {
   border-radius: 20px;
   border: none;
-  padding: 5px 10px;
-  font-size: 0.7em;
+  padding: 3px 10px;
+  font-size: .8em;
   text-align: right;
   margin: 0 0 0 10px;
   width: 300px;
 }
 
 .side-nav {
-  width: 200px;
+  width: 170px;
   height: 100%;
   padding: 0;
   margin: 0 2% 0 0;
@@ -54,6 +54,10 @@
   z-index: 1;
   background-color: #4D7DE1;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.side-nav a {
+  color: #fff;
 }
 
 .logo {
@@ -84,12 +88,12 @@
 
 .links {
   height: auto;
-  width: 200px;
+  width: 170px;
   margin: 0;
   padding: 0;
   font-family: "Muli", sans-serif;
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1.2em;
   text-align: center;
 }
 .links li {
@@ -100,7 +104,7 @@
   position: absolute;
   bottom: 0;
   color: #fff;
-  width: 200px;
+  width: 170px;
   height: auto;
   padding: 0;
   margin: 0 auto;
@@ -115,7 +119,7 @@
 }
 
 .main-container {
-  width: 100%;
+  width: 90%;
   height: auto;
   padding: 0 0 0 280px;
 }
@@ -123,25 +127,25 @@
 .headline {
   margin: 0;
   padding: 0;
-  width: 100%;
+  width: 70%;
   color: #000;
   font-family: "Muli", sans-serif;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: bold;
 }
 
 .card-container {
-  width: 55%;
+  width: 60%;
   height: auto;
   float: left;
 }
 
 .card {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-color: #4D7DE1;
   padding: 20px;
-  margin: 40px;
+  margin: 20px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
   overflow: scroll;
   float: left;
@@ -149,14 +153,14 @@
 
 .card-title {
   color: #fff;
-  font-size: 2em;
+  font-size: 1.7em;
   font-family: "Muli", sans-serif;
   text-align: center;
 }
 
 .card-content {
   color: #fff;
-  font-size: 1em;
+  font-size: .8em;
   font-family: "Muli", sans-serif;
   margin: 10px;
 }

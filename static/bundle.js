@@ -36303,6 +36303,7 @@ module.exports = Categories;
 'use strict';
 
 //Imports
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Router = require('react-router').Router;
@@ -36318,25 +36319,7 @@ var Content = React.createClass({
     var cardTable = this.props.cards.map(function (card) {
       return React.createElement(Card, { key: card.title, card: card });
     });
-    return React.createElement(
-      'div',
-      null,
-      React.createElement(
-        'div',
-        { className: 'main-container' },
-        React.createElement(
-          'div',
-          { className: 'headline' },
-          this.props.title
-        ),
-        React.createElement(
-          'div',
-          { className: 'card-container' },
-          cardTable
-        ),
-        React.createElement('div', { className: 'widget-container' })
-      )
-    );
+    return React.createElement('div', null, React.createElement('div', { className: 'main-container' }, React.createElement('div', { className: 'headline' }, this.props.title), React.createElement('div', { className: 'card-container' }, cardTable), React.createElement('div', { className: 'widget-container' })));
   }
 });
 
@@ -36429,6 +36412,7 @@ module.exports = { Main: Main, Blocks: Blocks, Codes: Codes };
 'use strict';
 
 //Imports
+
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Link = require('react-router').Link;
@@ -36438,108 +36422,7 @@ var Nav = React.createClass({
   displayName: 'Nav',
 
   render: function render() {
-    return React.createElement(
-      'div',
-      null,
-      React.createElement(
-        'div',
-        { className: 'top-nav' },
-        React.createElement(
-          'span',
-          { className: 'search' },
-          React.createElement(
-            'form',
-            { action: '#' },
-            'ICD-10-CM Code Search',
-            React.createElement('input', { type: 'text', name: 'search' })
-          )
-        ),
-        React.createElement(
-          'span',
-          { className: 'login' },
-          React.createElement(
-            'a',
-            { href: '#' },
-            'Login'
-          ),
-          ' | ',
-          React.createElement(
-            'a',
-            { href: '#' },
-            'Signup'
-          )
-        )
-      ),
-      React.createElement(
-        'div',
-        { className: 'side-nav' },
-        React.createElement(
-          Link,
-          { to: '/' },
-          React.createElement(
-            'div',
-            { className: 'logo' },
-            'eICD10'
-          ),
-          React.createElement(
-            'div',
-            { className: 'logo-back' },
-            'CODES'
-          )
-        ),
-        React.createElement(
-          'div',
-          { className: 'links' },
-          React.createElement(
-            'ul',
-            null,
-            React.createElement(
-              'li',
-              null,
-              React.createElement('i', { className: 'fa fa-heartbeat', 'aria-hidden': 'true' }),
-              React.createElement('br', null),
-              'ICD CODES'
-            ),
-            React.createElement(
-              'li',
-              null,
-              React.createElement('i', { className: 'fa fa-exchange', 'aria-hidden': 'true' }),
-              React.createElement('br', null),
-              'CODE CONVERSION'
-            ),
-            React.createElement(
-              'li',
-              null,
-              React.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' }),
-              React.createElement('br', null),
-              'CODE LOOKUP'
-            )
-          )
-        ),
-        React.createElement(
-          'div',
-          { className: 'copy' },
-          React.createElement(
-            'a',
-            { href: '#' },
-            'About'
-          ),
-          ' | ',
-          React.createElement(
-            'a',
-            { href: '#' },
-            'Privacy'
-          ),
-          React.createElement(
-            'p',
-            null,
-            '© ',
-            this.props.year,
-            ' cr-ks'
-          )
-        )
-      )
-    );
+    return React.createElement('div', null, React.createElement('div', { className: 'top-nav' }, React.createElement('span', { className: 'search' }, React.createElement('form', { action: '/search' }, 'ICD-10-CM Code Search', React.createElement('input', { type: 'text', name: 'query' }))), React.createElement('span', { className: 'login' }, React.createElement('a', { href: '#' }, 'Login'), ' | ', React.createElement('a', { href: '#' }, 'Signup'))), React.createElement('div', { className: 'side-nav' }, React.createElement(Link, { to: '/' }, React.createElement('div', { className: 'logo' }, 'eICD10'), React.createElement('div', { className: 'logo-back' }, 'CODES')), React.createElement('div', { className: 'links' }, React.createElement('ul', null, React.createElement(Link, { to: '/' }, React.createElement('li', null, React.createElement('i', { className: 'fa fa-heartbeat', 'aria-hidden': 'true' }), React.createElement('br', null), 'ICD CODES')), React.createElement('li', null, React.createElement('i', { className: 'fa fa-exchange', 'aria-hidden': 'true' }), React.createElement('br', null), 'CODE CONVERSION'), React.createElement('li', null, React.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' }), React.createElement('br', null), 'CODE LOOKUP'))), React.createElement('div', { className: 'copy' }, React.createElement('a', { href: '#' }, 'About'), ' | ', React.createElement('a', { href: '#' }, 'Privacy'), React.createElement('p', null, '© ', this.props.year, ' cr-ks'))));
   }
 });
 
