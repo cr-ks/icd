@@ -1,7 +1,6 @@
-#ICD-10 React Build
-
-- Things to change: jquery ajax POST method to fetch POST
-- Add fetch polyfill for other browsers
+#ICD-10 React Build v. 0.1.0
+ICD-10 Code Database with live search
+Fullstack MERN build running on EC2 Instance
 
 #Amazon Distro
 ec2-54-84-125-210.compute-1.amazonaws.com
@@ -12,12 +11,10 @@ mongod (start)
 mongo --shell
 use <db name>
 db.dropDatabase()
-
 mongoimport -d test -c shops data.json --jsonArray
 
-React Tutorial
-https://hashnode.com/post/react-tutorial-using-mern-stack-ciiyus9m700qqge53mer0isxz
-
-Current known issues:
-Fixed "undefined" loading title
-load in less search cards
+#Current known issues:
+- Fixed titles from undefined to Loading
+- Search page load without leaving search box
+- Look into changing "Conversion" section
+- Add user login / accounts, Login with facebook
