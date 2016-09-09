@@ -3,6 +3,10 @@
 - Things to change: jquery ajax POST method to fetch POST
 - Add fetch polyfill for other browsers
 
+#Amazon Distro
+ec2-54-84-125-210.compute-1.amazonaws.com
+54.84.125.210
+
 #Mongo Commands
 mongod (start)
 mongo --shell
@@ -16,4 +20,4 @@ https://hashnode.com/post/react-tutorial-using-mern-stack-ciiyus9m700qqge53mer0i
 
 Current known issues:
 Fixed "undefined" loading title
-load in less search cards 
+load in less search cards
