@@ -14,7 +14,7 @@ var Nav = React.createClass({
     return (
       <div>
         <div className="top-nav">
-          <span className="search"><form>ICD-10-CM Code Search<Link to='/Search'><input type="text" placeholder="Click here to search..." value={this.props.filterText} ref="filterTextInput" onChange={this.handleChange} /></Link></form></span>
+          <span className="search"><form>ICD-10-CM Code Search<Link to='/search'><input type="text" placeholder="Click here to search..." value={this.props.filterText} ref="filterTextInput" onChange={this.handleChange} /></Link></form></span>
           <span className="login"><a href="#">Login</a> | <a href="#">Signup</a></span>
         </div>
         <div className="side-nav">
