@@ -5,22 +5,17 @@
 Fullstack MERN build running on EC2 Instance
 
 #####Amazon Distro
-ec2-54-84-125-210.compute-1.amazonaws.com
-
+ec2-54-84-125-210.compute-1.amazonaws.com <br />
 54.84.125.210
 
-**Mongo Commands**
-mongod (start)
-
-mongo --shell
-
-use <db name>
-
-db.dropDatabase()
-
+#####Mongo Commands
+mongod (start) <br />
+mongo --shell <br />
+use <db name> <br />
+db.dropDatabase() <br />
 mongoimport -d test -c shops data.json --jsonArray
 
-#####Current known issues:
+###Current known issues:
 - Fixed titles from undefined to Loading
 - Scroll bars on chrome !
 - Search page load without leaving search box
