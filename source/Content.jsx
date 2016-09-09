@@ -43,7 +43,7 @@ var Content = React.createClass({
         if (card.description.indexOf(text) === -1) {
           return;
         }
-        if (cardTable.length <= 50) {
+        if (cardTable.length <= 25) {
           cardTable.push(<Card key={card.title} card={card} page={page}/>);
         }
       });
