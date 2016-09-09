@@ -14,4 +14,6 @@ mongoimport -d test -c shops data.json --jsonArray
 React Tutorial
 https://hashnode.com/post/react-tutorial-using-mern-stack-ciiyus9m700qqge53mer0isxz
 
-Currently at Step 7
+Current known issues:
+Fixed "undefined" loading title
+load in less search cards 
