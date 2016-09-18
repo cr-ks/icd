@@ -3,12 +3,12 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var Router = require('react-router');
 var $ = require('jquery');
-var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
+var Css = require('react-addons-css-transition-group');
 var History = Router.History;
 
 var Card = require('./Card.jsx');
 
-var currentYear = new Date().getFullYear();
+var currentYear =  new Date().getFullYear();
 
 var BackButton = React.createClass({
   mixins: [ History ],
@@ -24,8 +24,10 @@ var Widget = React.createClass({
     return (
       <div>
       <div className="widget-outer-container">
+      <div className="widget-inner-container">
       <div className="widget-container"></div>
       <p>Sponsored Content</p>
+      </div>
       </div>
       </div>
     );
@@ -40,7 +42,7 @@ var Content = React.createClass({
     var cardTable = [];
     if (page == 'Search') {
       this.props.cards.forEach(function(card) {
-        if (card.description.indexOf(text) === -1) {
+        if (card.description.toLowerCase().indexOf(text.toLowerCase()) === -1) {
           return;
         }
         if (cardTable.length <= 25) {
@@ -79,16 +81,13 @@ var Content = React.createClass({
       {this.props.title}
       </div>
       <div className="backbutton-container">
-      {accountButton}{button}<Widget />
+      {button}{accountButton}<Widget />
       </div>
       <div className="clear" />
       <div className="card-container">
-      <ReactCSSTransitionGroup
-      transitionName="example"
-      transitionEnterTimeout={500}
-      transitionLeaveTimeout={300}>
+      <Css transitionName="example" transitionEnterTimeout={500} transitionLeaveTimeout={300}>
       {cardTable}
-      </ReactCSSTransitionGroup>
+      </Css>
       </div>
       </div>
       </div>

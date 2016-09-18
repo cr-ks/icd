@@ -16,8 +16,7 @@ db.dropDatabase() <br />
 mongoimport -d test -c shops data.json --jsonArray
 
 ###Current known issues:
+- Add policy links 
 - Fixed titles from undefined to Loading
 - Scroll bars on chrome !
-- Search page load without leaving search box
-- Look into changing "Conversion" section
 - Add user login / accounts, Login with facebook

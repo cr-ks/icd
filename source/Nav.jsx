@@ -14,7 +14,10 @@ var Nav = React.createClass({
     return (
       <div>
         <div className="top-nav">
-          <span className="search"><form>ICD-10-CM Code Search<Link to='/search'><input type="text" placeholder="Click here to search..." value={this.props.filterText} ref="filterTextInput" onChange={this.handleChange} /></Link></form></span>
+          <span className="search"><form><p>ICD-10-CM Code Search</p><Link to='/search'>
+          <input type="text" value={this.props.filterText} ref="filterTextInput" onChange={this.handleChange} />
+          <button>Search</button>
+          </Link></form></span>
           <span className="login"><a href="#">Login</a> | <a href="#">Signup</a></span>
         </div>
         <div className="side-nav">
@@ -22,7 +25,7 @@ var Nav = React.createClass({
           <div className="links">
             <ul>
               <Link to={'/'}><li><i className="fa fa-heartbeat" aria-hidden="true"></i><br />ICD CODES</li></Link>
-              <li><i className="fa fa-exchange" aria-hidden="true"></i><br />CODE CONVERSION</li>
+
               <Link to={'/search'}><li><i className="fa fa-search" aria-hidden="true"></i><br />CODE LOOKUP</li></Link>
             </ul>
           </div>
@@ -36,3 +39,5 @@ var Nav = React.createClass({
 });
 
 module.exports = Nav;
+
+// <li><i className="fa fa-exchange" aria-hidden="true"></i><br />CODE CONVERSION</li>
