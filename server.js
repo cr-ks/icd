@@ -56,7 +56,7 @@ app.get('/api/code/:id', function(req, res) {
   });
 });
 
-MongoClient.connect('mongodb://localhost/icd', function(err, dbConnection) {
+MongoClient.connect('mongodb://davidmichael:kena0117@ds035846.mlab.com:35846/icd', function(err, dbConnection) {
   db = dbConnection;
   app.listen(process.env.PORT || 5000);
 });
