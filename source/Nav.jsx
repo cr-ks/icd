@@ -14,7 +14,7 @@ var Nav = React.createClass({
     return (
       <div>
         <div className="top-nav">
-          <span className="search"><form><p>ICD-10-CM Code Search</p><Link to='/search'>
+          <span className="search"><form>ICD-10-CM Code Search<Link to='/search'>
           <input type="text" value={this.props.filterText} ref="filterTextInput" onChange={this.handleChange} />
           <button>Search</button>
           </Link></form></span>

@@ -37119,7 +37119,6 @@ module.exports = Categories;
 'use strict';
 
 //Imports
-
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Router = require('react-router');
@@ -37136,7 +37135,11 @@ var BackButton = React.createClass({
 
   mixins: [History],
   render: function render() {
-    return React.createElement('button', { className: 'backbutton', onClick: this.history.goBack }, 'Go Back');
+    return React.createElement(
+      'button',
+      { className: 'backbutton', onClick: this.history.goBack },
+      'Go Back'
+    );
   }
 });
 
@@ -37144,7 +37147,24 @@ var Widget = React.createClass({
   displayName: 'Widget',
 
   render: function render() {
-    return React.createElement('div', null, React.createElement('div', { className: 'widget-outer-container' }, React.createElement('div', { className: 'widget-inner-container' }, React.createElement('div', { className: 'widget-container' }), React.createElement('p', null, 'Sponsored Content'))));
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'div',
+        { className: 'widget-outer-container' },
+        React.createElement(
+          'div',
+          { className: 'widget-inner-container' },
+          React.createElement('div', { className: 'widget-container' }),
+          React.createElement(
+            'p',
+            null,
+            'Sponsored Content'
+          )
+        )
+      )
+    );
   }
 });
 
@@ -37171,11 +37191,19 @@ var Content = React.createClass({
       });
     }
     var button;
-    var accountButton = React.createElement('button', { className: 'homebutton' }, 'My Codes');
+    var accountButton = React.createElement(
+      'button',
+      { className: 'homebutton' },
+      'My Codes'
+    );
     if (page !== 'Main') {
       button = React.createElement(BackButton, null);
     } else {
-      button = React.createElement('button', { className: 'greybutton' }, 'Go Back');
+      button = React.createElement(
+        'button',
+        { className: 'greybutton' },
+        'Go Back'
+      );
     }
     $(function () {
       var navTop = $('.backbutton-container').offset().top;
@@ -37190,7 +37218,36 @@ var Content = React.createClass({
         }
       });
     });
-    return React.createElement('div', null, React.createElement('div', { className: 'main-container' }, React.createElement('div', { className: 'headline' }, this.props.title), React.createElement('div', { className: 'backbutton-container' }, button, accountButton, React.createElement(Widget, null)), React.createElement('div', { className: 'clear' }), React.createElement('div', { className: 'card-container' }, React.createElement(Css, { transitionName: 'example', transitionEnterTimeout: 500, transitionLeaveTimeout: 300 }, cardTable))));
+    return React.createElement(
+      'div',
+      null,
+      React.createElement(
+        'div',
+        { className: 'main-container' },
+        React.createElement(
+          'div',
+          { className: 'headline' },
+          this.props.title
+        ),
+        React.createElement(
+          'div',
+          { className: 'backbutton-container' },
+          button,
+          accountButton,
+          React.createElement(Widget, null)
+        ),
+        React.createElement('div', { className: 'clear' }),
+        React.createElement(
+          'div',
+          { className: 'card-container' },
+          React.createElement(
+            Css,
+            { transitionName: 'example', transitionEnterTimeout: 500, transitionLeaveTimeout: 300 },
+            cardTable
+          )
+        )
+      )
+    );
   }
 });
 
@@ -37372,7 +37429,7 @@ var Nav = React.createClass({
     this.props.onUserInput(this.refs.filterTextInput.value);
   },
   render: function render() {
-    return React.createElement('div', null, React.createElement('div', { className: 'top-nav' }, React.createElement('span', { className: 'search' }, React.createElement('form', null, React.createElement('p', null, 'ICD-10-CM Code Search'), React.createElement(Link, { to: '/search' }, React.createElement('input', { type: 'text', value: this.props.filterText, ref: 'filterTextInput', onChange: this.handleChange }), React.createElement('button', null, 'Search')))), React.createElement('span', { className: 'login' }, React.createElement('a', { href: '#' }, 'Login'), ' | ', React.createElement('a', { href: '#' }, 'Signup'))), React.createElement('div', { className: 'side-nav' }, React.createElement(Link, { to: '/' }, React.createElement('div', { className: 'logo' }, 'eICD10'), React.createElement('div', { className: 'logo-back' }, 'CODES')), React.createElement('div', { className: 'links' }, React.createElement('ul', null, React.createElement(Link, { to: '/' }, React.createElement('li', null, React.createElement('i', { className: 'fa fa-heartbeat', 'aria-hidden': 'true' }), React.createElement('br', null), 'ICD CODES')), React.createElement(Link, { to: '/search' }, React.createElement('li', null, React.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' }), React.createElement('br', null), 'CODE LOOKUP')))), React.createElement('div', { className: 'copy' }, React.createElement('a', { href: '#' }, 'About'), ' | ', React.createElement('a', { href: '#' }, 'Privacy'), React.createElement('p', null, '© ', this.props.year, ' cr-ks'))));
+    return React.createElement('div', null, React.createElement('div', { className: 'top-nav' }, React.createElement('span', { className: 'search' }, React.createElement('form', null, 'ICD-10-CM Code Search', React.createElement(Link, { to: '/search' }, React.createElement('input', { type: 'text', value: this.props.filterText, ref: 'filterTextInput', onChange: this.handleChange }), React.createElement('button', null, 'Search')))), React.createElement('span', { className: 'login' }, React.createElement('a', { href: '#' }, 'Login'), ' | ', React.createElement('a', { href: '#' }, 'Signup'))), React.createElement('div', { className: 'side-nav' }, React.createElement(Link, { to: '/' }, React.createElement('div', { className: 'logo' }, 'eICD10'), React.createElement('div', { className: 'logo-back' }, 'CODES')), React.createElement('div', { className: 'links' }, React.createElement('ul', null, React.createElement(Link, { to: '/' }, React.createElement('li', null, React.createElement('i', { className: 'fa fa-heartbeat', 'aria-hidden': 'true' }), React.createElement('br', null), 'ICD CODES')), React.createElement(Link, { to: '/search' }, React.createElement('li', null, React.createElement('i', { className: 'fa fa-search', 'aria-hidden': 'true' }), React.createElement('br', null), 'CODE LOOKUP')))), React.createElement('div', { className: 'copy' }, React.createElement('a', { href: '#' }, 'About'), ' | ', React.createElement('a', { href: '#' }, 'Privacy'), React.createElement('p', null, '© ', this.props.year, ' cr-ks'))));
   }
 });
 
