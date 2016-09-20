@@ -33,6 +33,9 @@ var Nav = React.createClass({
             <p>&copy; {this.props.year} cr-ks</p>
           </div>
         </div>
+        <div className="mobile-nav">
+        This thing
+        </div>
       </div>
     )
   }

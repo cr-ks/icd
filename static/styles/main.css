@@ -34,6 +34,9 @@
   font-family: "Muli", sans-serif;
   font-size: 1em;
 }
+
+
+
 .search input {
   border: none;
   padding: 5px 10px;
@@ -262,97 +265,8 @@
   transition: opacity 300ms ease-in;
 }
 
-@media screen and (max-width: 1024px) {
-    .main-container {
-      width: 70%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .main-container {
-      width: 100%;
-      padding-left: 30px;
-      padding-top: 100px;
-    }
-
-    .card-container {
-      width: 100%
-    }
-
-    .top-nav {
-      position: fixed;
-    }
-
-    .search input {
-      width: 200px;
-    }
-
-    .backbutton-container {
-      display: fixed;
-      top: 0;
-    }
-
-    .backbutton {
-      background-color: #4D7DE1;
-    }
-
-    .widget-outer-container {
-      display: none;
-    }
-
-    .search {
-      margin: 0 0 0 20px;
-
-    }
-
-    .side-nav {
-      display: none;
-    }
-
-    .login {
-      display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-
-  .backbutton-container {
-    display: none;
-  }
-
-  .search {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-  }
-
-  .search input {
-    width: 200px;
-  }
-
-  .search p {
-    display: none;
-  }
-
-  .main-container {
-    width: 100%;
-    margin: 0;
-    padding: 70px 0;
-    text-align: center;
-  }
-
-  .card-container {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .headline {
-    width: 80%;
-    padding: 10px;
-  }
-
+.mobile-nav {
+  display: none;
 }
 
 html, body {
