@@ -56,7 +56,7 @@ app.get('/api/code/:id', function(req, res) {
   });
 });
 
-MongoClient.connect('localhost/icd', function(err, dbConnection) {
+MongoClient.connect('mongodb://localhost/icd', function(err, dbConnection) {
   db = dbConnection;
   app.listen(process.env.PORT || 5000);
 });
