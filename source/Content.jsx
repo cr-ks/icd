@@ -49,7 +49,7 @@ var Content = React.createClass({
           cardTable.push(<Card key={card.title} card={card} page={page}/>);
         }
       });
-    } else  if (this.props.cards){
+    } else {
     var cardTable = this.props.cards.map(function(card) {
       return <Card key={card.title} card={card} page={page}/>
     });
