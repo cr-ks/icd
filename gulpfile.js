@@ -2,6 +2,15 @@ var gulp = require('gulp');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var watchify = require('watchify');
+var sass = require('gulp-sass');
+var nano = require('gulp-cssnano');
+
+gulp.task('sass', function() {
+  return gulp.src('source/sass/*.sass')
+    .pipe(sass())
+    .pipe(nano())
+    .pipe(gulp.dest('static/css'))
+});
 
 gulp.task('bundle', function() {
   return browserify('source/App.jsx')
@@ -40,3 +49,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', ['watch']);
+
+gulp.task('see', ['sass'], function() {
+  gulp.watch('source/sass/*.sass', ['sass'])
+});
